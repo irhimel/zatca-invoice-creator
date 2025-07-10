@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <!-- Allow network access for Azure SQL and ZATCA API -->
+    <key>com.apple.security.network.client</key>
+    <true/>
+    
+    <!-- Allow outgoing network connections -->
+    <key>com.apple.security.network.server</key>
+    <true/>
+    
+    <!-- Allow file system access for invoice storage -->
+    <key>com.apple.security.files.user-selected.read-write</key>
+    <true/>
+    
+    <!-- Allow camera access (if QR scanning is needed) -->
+    <key>com.apple.security.device.camera</key>
+    <true/>
+    
+    <!-- Allow printing invoices -->
+    <key>com.apple.security.print</key>
+    <true/>
+    
+    <!-- Allow access to Downloads folder for PDF exports -->
+    <key>com.apple.security.files.downloads.read-write</key>
+    <true/>
+    
+    <!-- Allow access to Documents folder -->
+    <key>com.apple.security.files.user-selected.read-write</key>
+    <true/>
+    
+    <!-- JIT compilation for JavaScript engine -->
+    <key>com.apple.security.cs.allow-jit</key>
+    <true/>
+    
+    <!-- Disable library validation for Electron -->
+    <key>com.apple.security.cs.disable-library-validation</key>
+    <true/>
+    
+    <!-- Allow unsigned executable memory for Node.js -->
+    <key>com.apple.security.cs.allow-unsigned-executable-memory</key>
+    <true/>
+    
+    <!-- Hardened runtime compatibility -->
+    <key>com.apple.security.cs.debugger</key>
+    <true/>
+  </dict>
+</plist>

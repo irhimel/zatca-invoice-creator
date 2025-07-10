@@ -1,0 +1,68 @@
+directories:
+  output: release
+  buildResources: build
+appId: com.zatca.invoice-creator
+productName: ZATCA Invoice Creator
+copyright: Copyright © 2025 ZATCA Invoice Creator
+files:
+  - filter:
+      - dist/**/*
+      - public/electron.js
+      - public/preload.js
+      - node_modules/**/*
+      - '!node_modules/**/{README.md,readme.md,CHANGELOG.md,changelog.md,HISTORY.md,history.md}'
+      - '!node_modules/**/{test,tests,spec,specs,example,examples,demo,docs,doc,website}/**/*'
+      - '!node_modules/**/{*.md,*.txt,*.map}'
+extraMetadata:
+  main: public/electron.js
+mac:
+  category: public.app-category.business
+  target:
+    - target: dmg
+      arch:
+        - x64
+        - arm64
+    - target: zip
+      arch:
+        - x64
+        - arm64
+  artifactName: ${productName}-${version}-${arch}.${ext}
+  identity: null
+  hardenedRuntime: false
+  gatekeeperAssess: false
+dmg:
+  title: ZATCA Invoice Creator
+  iconSize: 100
+  window:
+    width: 540
+    height: 380
+  contents:
+    - x: 130
+      'y': 220
+      type: file
+    - x: 410
+      'y': 220
+      type: link
+      path: /Applications
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+    - target: portable
+      arch:
+        - x64
+  requestedExecutionLevel: asInvoker
+  artifactName: ${productName}-${version}-Setup.${ext}
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: ZATCA Invoice Creator
+linux:
+  target:
+    - target: AppImage
+      arch:
+        - x64
+electronVersion: 37.2.0

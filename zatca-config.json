@@ -1,0 +1,242 @@
+{
+    "zatca": {
+        "environment": "sandbox",
+        "apiBaseUrl": "https://gw-apic-gov.gazt.gov.sa/e-invoicing/core",
+        "complianceApiUrl": "https://gw-apic-gov.gazt.gov.sa/e-invoicing/developer-portal",
+        "credentials": {
+            "username": "",
+            "password": "",
+            "otpSecret": ""
+        },
+        "certificate": {
+            "commonName": "Your Company Name",
+            "serialNumber": "1-Your-Company|2-Your-Branch|3-Your-Device",
+            "organizationIdentifier": "300000000000003"
+        },
+        "invoiceTypes": {
+            "simplified": {
+                "code": "388",
+                "name": "Tax Invoice"
+            },
+            "standard": {
+                "code": "383",
+                "name": "Debit Note"
+            }
+        },
+        "taxCategories": {
+            "standard": {
+                "code": "S",
+                "rate": 15.0,
+                "name": "Standard Rate"
+            },
+            "zeroRated": {
+                "code": "Z",
+                "rate": 0.0,
+                "name": "Zero Rated"
+            },
+            "exempt": {
+                "code": "E",
+                "rate": 0.0,
+                "name": "Exempt"
+            }
+        },
+        "paymentMethods": {
+            "cash": {
+                "code": "10",
+                "name": "Cash"
+            },
+            "creditCard": {
+                "code": "48",
+                "name": "Credit Card"
+            },
+            "bankTransfer": {
+                "code": "42",
+                "name": "Bank Transfer"
+            },
+            "check": {
+                "code": "20",
+                "name": "Check"
+            }
+        },
+        "unitOfMeasure": {
+            "piece": {
+                "code": "PCE",
+                "name": "Piece"
+            },
+            "kilogram": {
+                "code": "KGM",
+                "name": "Kilogram"
+            },
+            "meter": {
+                "code": "MTR",
+                "name": "Meter"
+            },
+            "liter": {
+                "code": "LTR",
+                "name": "Liter"
+            },
+            "hour": {
+                "code": "HUR",
+                "name": "Hour"
+            },
+            "day": {
+                "code": "DAY",
+                "name": "Day"
+            },
+            "month": {
+                "code": "MON",
+                "name": "Month"
+            },
+            "year": {
+                "code": "ANN",
+                "name": "Year"
+            }
+        }
+    },
+    "invoice": {
+        "defaultSettings": {
+            "currency": "SAR",
+            "language": "en",
+            "vatRate": 15.0,
+            "dueDays": 30,
+            "invoicePrefix": "INV",
+            "quotePrefix": "QUO",
+            "autoGenerateNumbers": true,
+            "includeQRCode": true,
+            "includeLogo": true
+        },
+        "validation": {
+            "requireCustomerVAT": false,
+            "requireItemCodes": false,
+            "allowNegativeAmounts": false,
+            "maxLineItems": 100,
+            "maxInvoiceAmount": 1000000.00
+        },
+        "formatting": {
+            "dateFormat": "YYYY-MM-DD",
+            "numberFormat": "0.00",
+            "currencySymbol": "ر.س",
+            "thousandsSeparator": ",",
+            "decimalSeparator": "."
+        }
+    },
+    "pdf": {
+        "template": {
+            "logoMaxWidth": 200,
+            "logoMaxHeight": 100,
+            "headerColor": "#2563eb",
+            "accentColor": "#1d4ed8",
+            "fontFamily": "Arial",
+            "fontSize": {
+                "title": 24,
+                "header": 16,
+                "body": 12,
+                "footer": 10
+            },
+            "margins": {
+                "top": 20,
+                "right": 20,
+                "bottom": 20,
+                "left": 20
+            }
+        },
+        "watermark": {
+            "enabled": false,
+            "text": "DRAFT",
+            "opacity": 0.1,
+            "fontSize": 72,
+            "color": "#cccccc"
+        }
+    },
+    "email": {
+        "templates": {
+            "invoice": {
+                "subject": "Invoice #{invoiceNumber} from {companyName}",
+                "subjectAr": "فاتورة رقم #{invoiceNumber} من {companyName}",
+                "body": "Dear {customerName},\n\nPlease find attached your invoice #{invoiceNumber}.\n\nThank you for your business!\n\nBest regards,\n{companyName}",
+                "bodyAr": "عزيزي {customerName}،\n\nيرجى العثور على فاتورتك المرفقة رقم #{invoiceNumber}.\n\nشكراً لتعاملكم معنا!\n\nأطيب التحيات،\n{companyName}"
+            },
+            "quote": {
+                "subject": "Quote #{quoteNumber} from {companyName}",
+                "subjectAr": "عرض سعر رقم #{quoteNumber} من {companyName}",
+                "body": "Dear {customerName},\n\nPlease find attached your quote #{quoteNumber}.\n\nThis quote is valid until {validUntil}.\n\nBest regards,\n{companyName}",
+                "bodyAr": "عزيزي {customerName}،\n\nيرجى العثور على عرض السعر المرفق رقم #{quoteNumber}.\n\nهذا العرض صالح حتى {validUntil}.\n\nأطيب التحيات،\n{companyName}"
+            }
+        }
+    },
+    "backup": {
+        "enabled": true,
+        "intervalHours": 6,
+        "retentionDays": 30,
+        "compressionEnabled": true,
+        "encryptionEnabled": true,
+        "destinations": {
+            "local": {
+                "enabled": true,
+                "path": "./backups"
+            },
+            "cloud": {
+                "enabled": false,
+                "provider": "azure",
+                "connectionString": ""
+            }
+        }
+    },
+    "security": {
+        "encryption": {
+            "algorithm": "AES-256-GCM",
+            "keyRotationDays": 90
+        },
+        "session": {
+            "timeoutMinutes": 480,
+            "maxSessions": 5
+        },
+        "audit": {
+            "enabled": true,
+            "logLevel": "info",
+            "retentionDays": 365
+        }
+    },
+    "performance": {
+        "cache": {
+            "enabled": true,
+            "ttlSeconds": 3600,
+            "maxSize": "100MB"
+        },
+        "pagination": {
+            "defaultPageSize": 25,
+            "maxPageSize": 100
+        },
+        "sync": {
+            "batchSize": 50,
+            "intervalSeconds": 300,
+            "retryAttempts": 3,
+            "retryDelaySeconds": 5
+        }
+    },
+    "integration": {
+        "webhook": {
+            "enabled": false,
+            "url": "",
+            "secret": "",
+            "events": [
+                "invoice.created",
+                "invoice.sent",
+                "invoice.paid",
+                "quote.created",
+                "quote.accepted"
+            ]
+        },
+        "api": {
+            "enabled": true,
+            "rateLimit": 100,
+            "rateLimitWindow": 60,
+            "cors": {
+                "enabled": true,
+                "origins": [
+                    "http://localhost:3000"
+                ]
+            }
+        }
+    }
+}
