@@ -186,13 +186,13 @@ const CreateInvoicePanel: React.FC = () => {
 
     const handleGenerateInvoice = async (): Promise<void> => {
         try {
-            // Calculate totals
-            const subtotal = items.reduce((sum, item) => sum + (item.quantity * item.unitPrice), 0);
-            const totalTax = items.reduce((sum, item) => {
-                const itemSubtotal = item.quantity * item.unitPrice;
-                return sum + (itemSubtotal * (item.taxRate / 100));
-            }, 0);
-            // const total = subtotal + totalTax; // Not used in current implementation
+            // Calculate totals (commented out as not currently used in implementation)
+            // const subtotal = items.reduce((sum, item) => sum + (item.quantity * item.unitPrice), 0);
+            // const totalTax = items.reduce((sum, item) => {
+            //     const itemSubtotal = item.quantity * item.unitPrice;
+            //     return sum + (itemSubtotal * (item.taxRate / 100));
+            // }, 0);
+            // const total = subtotal + totalTax;
 
             const invoiceData = {
                 supplier: {

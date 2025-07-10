@@ -15,11 +15,6 @@ interface RemoveItemHandler {
   (index: number): void;
 }
 
-interface InvoicePreviewProps {
-  // Currently no props needed, but keeping interface for future extensibility
-  // eslint-disable-next-line @typescript-eslint/no-empty-object-type
-}
-
 export function InvoiceForm(): JSX.Element {
   const { state, dispatch } = useInvoice();
   const { currentInvoice } = state;
@@ -314,7 +309,7 @@ export function InvoiceForm(): JSX.Element {
   );
 }
 
-function InvoicePreview(/* _: InvoicePreviewProps */): JSX.Element {
+function InvoicePreview(): JSX.Element {
   const { state } = useInvoice();
   const { currentInvoice } = state;
 
