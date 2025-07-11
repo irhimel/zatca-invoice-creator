@@ -1,23 +1,25 @@
-# 🖥️ Windows Installation Guide
+# Windows Installation Guide
 
-## 📦 **WINDOWS INSTALLER READY**
+## WINDOWS INSTALLER READY
 
 Your ZATCA Invoice Creator application has been successfully built as a Windows .exe installer!
 
-### 🎯 **INSTALLER DETAILS**
+### INSTALLER DETAILS
 
 | File | Purpose | Size |
 |------|---------|------|
 | `ZATCA Invoice Creator-1.0.0-Setup.exe` | **Main Windows Installer** | ~89 MB |
 | `ZATCA Invoice Creator 1.0.0.exe` | Portable Version | ~95 MB |
 
-### 🚀 **INSTALLATION INSTRUCTIONS**
+### INSTALLATION INSTRUCTIONS
 
-#### **Step 1: Download the Installer**
+#### Step 1: Download the Installer
+
 - Copy `ZATCA Invoice Creator-1.0.0-Setup.exe` to your Windows computer
 - The installer is completely self-contained (no internet required)
 
-#### **Step 2: Install the Application**
+#### Step 2: Install the Application
+
 1. **Right-click** the installer file
 2. Select **"Run as administrator"** (recommended)
 3. If Windows Defender SmartScreen appears, click **"More info"** → **"Run anyway"**
@@ -26,12 +28,13 @@ Your ZATCA Invoice Creator application has been successfully built as a Windows 
    - Select whether to create desktop shortcut
    - Click **"Install"**
 
-#### **Step 3: First Launch**
+#### Step 3: First Launch
+
 1. **Desktop shortcut** will be created automatically
 2. Or find it in **Start Menu** → **"ZATCA Invoice Creator"**
 3. The application will start immediately
 
-### ⚙️ **SYSTEM REQUIREMENTS**
+### SYSTEM REQUIREMENTS
 
 | Requirement | Specification |
 |-------------|---------------|
@@ -41,16 +44,17 @@ Your ZATCA Invoice Creator application has been successfully built as a Windows 
 | **Storage** | 500 MB available space |
 | **Internet** | Optional (for Azure SQL sync and ZATCA reporting) |
 
-### 🔧 **WHAT'S INCLUDED**
+### WHAT'S INCLUDED
 
 The installer contains everything needed to run the application:
+
 - ✅ **ZATCA Invoice Creator** - Main application
 - ✅ **Node.js Runtime** - Embedded (no separate installation needed)
 - ✅ **All Dependencies** - Pre-bundled libraries
 - ✅ **Electron Framework** - Desktop application wrapper
 - ✅ **Auto-updater** - Future update capability
 
-### 📋 **INSTALLATION FEATURES**
+### INSTALLATION FEATURES
 
 - ✅ **Clean Installation** - No registry pollution
 - ✅ **User-level Install** - No admin rights required for daily use
@@ -59,34 +63,38 @@ The installer contains everything needed to run the application:
 - ✅ **File Associations** - Optional association with invoice files
 - ✅ **Offline Operation** - Works without internet connection
 
-### 🛡️ **SECURITY NOTES**
+### SECURITY NOTES
 
-#### **Windows Defender SmartScreen**
+#### Windows Defender SmartScreen
+
 - Windows may show a warning because the app is not digitally signed
 - This is normal for new applications
 - Click **"More info"** → **"Run anyway"** to proceed
 - The application is completely safe and contains no malware
 
-#### **Antivirus Software**
+#### Antivirus Software
+
 - Some antivirus software may flag Electron applications
 - Add the installation directory to your antivirus whitelist if needed
 - This is a false positive common with Electron-based applications
 
-### 🔄 **UPDATING THE APPLICATION**
+### UPDATING THE APPLICATION
 
 Future updates can be installed by:
+
 1. **Running a new installer** - Will update in place
 2. **Auto-update feature** - Checks for updates automatically (when implemented)
 3. **Manual replacement** - Download and install new version
 
-### 🗑️ **UNINSTALLING**
+### UNINSTALLING
 
 To remove the application:
+
 1. **Windows 10/11**: Settings → Apps → ZATCA Invoice Creator → Uninstall
 2. **Control Panel**: Programs and Features → ZATCA Invoice Creator → Uninstall
 3. **Start Menu**: Right-click app → Uninstall
 
-### 📁 **APPLICATION DATA LOCATIONS**
+### APPLICATION DATA LOCATIONS
 
 | Data Type | Location |
 |-----------|----------|
@@ -95,45 +103,53 @@ To remove the application:
 | **Temporary Files** | `C:\Users\[Username]\AppData\Local\Temp\ZATCA Invoice Creator\` |
 | **Desktop Shortcut** | `C:\Users\[Username]\Desktop\ZATCA Invoice Creator.lnk` |
 
-### 🆘 **TROUBLESHOOTING**
+### TROUBLESHOOTING
 
-#### **Installation Issues**
+#### Installation Issues
+
 - **Error: "Access denied"** → Run installer as administrator
 - **Error: "Installation failed"** → Disable antivirus temporarily
 - **Error: "Insufficient space"** → Free up at least 500 MB disk space
 
-#### **Application Won't Start**
+#### Application Won't Start
+
 - **Check Windows version** → Requires Windows 10 1809+ or Windows 11
 - **Run as administrator** → Right-click app icon → "Run as administrator"
 - **Reinstall application** → Uninstall and reinstall from fresh installer
 
-#### **Performance Issues**
+#### Performance Issues
+
 - **Close other applications** → Free up RAM
 - **Check disk space** → Ensure sufficient free space
 - **Update Windows** → Install latest Windows updates
 
-### 🌐 **NETWORK CONFIGURATION**
+### NETWORK CONFIGURATION
 
-#### **Firewall Settings**
+#### Firewall Settings
+
 If using Azure SQL or ZATCA integration:
+
 - Allow outbound connections on **port 1433** (SQL Server)
 - Allow outbound connections on **port 443** (HTTPS/ZATCA)
 
-#### **Proxy Settings**
+#### Proxy Settings
+
 The application will use Windows system proxy settings automatically.
 
-### 📞 **SUPPORT**
+### SUPPORT
 
 For installation support:
+
 1. **Check this guide** - Most issues are covered here
 2. **Run health check** - Use built-in diagnostic tools
 3. **Check logs** - Located in `%APPDATA%\ZATCA Invoice Creator\logs\`
 
 ---
 
-## 🎉 **READY FOR BUSINESS USE**
+## READY FOR BUSINESS USE
 
 Your Windows installer is production-ready and includes:
+
 - ✅ **Complete ZATCA compliance** - Phase 2 ready
 - ✅ **Professional interface** - Modern, intuitive design  
 - ✅ **Offline operation** - Works without internet
@@ -144,6 +160,6 @@ Your Windows installer is production-ready and includes:
 
 ---
 
-*Generated: July 10, 2025*  
+*Generated: July 10, 2025*
 *Installer Version: 1.0.0*  
 *Platform: Windows x64*

@@ -1,8 +1,9 @@
-# 🧪 ZATCA Invoice Creator - QA Testing Guide
+# ZATCA Invoice Creator - QA Testing Guide
 
-## ✅ Pre-Testing Setup
+## Pre-Testing Setup
 
 1. **Start the Development Environment**
+
    ```bash
    npm run dev
    # or
@@ -10,17 +11,19 @@
    ```
 
 2. **Verify Clean State**
+
    - ✅ No lint errors: `npm run lint`
    - ✅ Successful build: `npm run build`
    - ✅ Hot reload working
 
 ---
 
-## 🎯 Core Functional Testing
+## Core Functional Testing
 
-### 📋 1. Invoice Creation & Management
+### 1. Invoice Creation & Management
 
 **Standard Invoice Creation:**
+
 - [ ] Create new invoice with customer details
 - [ ] Add multiple invoice items (description, quantity, unit price)
 - [ ] Verify tax calculations (15% VAT default)
@@ -30,6 +33,7 @@
 - [ ] Duplicate invoice
 
 **ZATCA E-Invoice Generation:**
+
 - [ ] Generate simplified ZATCA invoice
 - [ ] Verify supplier data from app settings
 - [ ] Check UBL XML generation
@@ -38,15 +42,17 @@
 - [ ] Verify invoice numbering sequence
 
 **Edge Cases:**
+
 - [ ] Invoice with zero items
 - [ ] Very large quantities/amounts
 - [ ] Special characters in descriptions
 - [ ] Arabic text handling
 - [ ] Empty customer information
 
-### 👥 2. Client Management
+### 2. Client Management
 
 **CRUD Operations:**
+
 - [ ] Create new client
 - [ ] Edit client information
 - [ ] Delete client (with/without invoices)
@@ -54,6 +60,7 @@
 - [ ] Import client from previous invoice
 
 **Client Integration:**
+
 - [ ] Select client for invoice
 - [ ] Auto-populate customer details
 - [ ] Client statistics display
@@ -62,12 +69,14 @@
 ### 📊 3. Offline/Online Sync
 
 **Offline Functionality:**
+
 - [ ] Create invoices while offline
 - [ ] Queue invoices for ZATCA reporting
 - [ ] Local database persistence
 - [ ] Data export/backup
 
 **Online Sync:**
+
 - [ ] ZATCA invoice reporting
 - [ ] Azure SQL sync (if configured)
 - [ ] Firestore sync (if configured)
@@ -77,6 +86,7 @@
 ### 🌐 4. Language & Settings
 
 **Localization:**
+
 - [ ] Switch between English/Arabic
 - [ ] RTL layout in Arabic mode
 - [ ] Date format changes
@@ -84,6 +94,7 @@
 - [ ] Currency display
 
 **App Settings:**
+
 - [ ] Company information setup
 - [ ] VAT number configuration
 - [ ] Invoice prefix customization
@@ -93,6 +104,7 @@
 ### 📱 5. Export & PDF Generation
 
 **PDF Export:**
+
 - [ ] Standard invoice PDF
 - [ ] ZATCA compliant PDF with QR
 - [ ] Multiple invoices batch export
@@ -100,6 +112,7 @@
 - [ ] Email integration (if available)
 
 **Data Export:**
+
 - [ ] Export invoices to Excel/CSV
 - [ ] Export client list
 - [ ] Backup all data
@@ -110,12 +123,14 @@
 ## 🚀 Hot Reload & Development Testing
 
 ### React Fast Refresh
+
 - [ ] Edit component and verify instant update
 - [ ] Modify styles and see immediate changes
 - [ ] State preservation during edits
 - [ ] Error boundary handling
 
 ### TypeScript Integration
+
 - [ ] Type errors show in real-time
 - [ ] IntelliSense working in IDE
 - [ ] Auto-imports functioning
@@ -126,12 +141,14 @@
 ## 🔒 Security & Performance Testing
 
 ### Data Security
+
 - [ ] Local data encryption
 - [ ] No sensitive data in console logs
 - [ ] Secure API communications
 - [ ] Certificate validation
 
 ### Performance
+
 - [ ] App startup time < 3 seconds
 - [ ] Large invoice lists load quickly
 - [ ] PDF generation responsive
@@ -143,18 +160,21 @@
 ## 🐛 Error Handling Testing
 
 ### User Input Validation
+
 - [ ] Invalid email formats
 - [ ] Negative quantities/prices
 - [ ] Required field validation
 - [ ] Maximum length constraints
 
 ### Network Failures
+
 - [ ] Offline mode activation
 - [ ] Failed API requests handling
 - [ ] Retry mechanisms
 - [ ] User-friendly error messages
 
 ### Edge Cases
+
 - [ ] Database corruption recovery
 - [ ] Large file uploads
 - [ ] Concurrent operations
@@ -165,6 +185,7 @@
 ## 📋 Manual Testing Checklist
 
 ### Daily Workflow Simulation
+
 1. **Morning Setup**
    - [ ] Open app
    - [ ] Check pending invoices
@@ -183,6 +204,7 @@
    - [ ] Close app properly
 
 ### Cross-Platform Testing (Electron)
+
 - [ ] **macOS**: ARM64 and Intel builds
 - [ ] **Windows**: 64-bit executable
 - [ ] **File associations** working
@@ -193,6 +215,7 @@
 ## 🎯 Acceptance Criteria
 
 ### Critical (Must Pass)
+
 - ✅ Zero lint/build errors
 - ✅ Invoice creation and PDF export working
 - ✅ ZATCA QR code generation functional
@@ -200,12 +223,14 @@
 - ✅ Language switching operational
 
 ### Important (Should Pass)
+
 - ✅ All CRUD operations functional
 - ✅ Error handling graceful
 - ✅ Performance acceptable
 - ✅ UI responsive and intuitive
 
 ### Nice to Have (Could Pass)
+
 - ✅ Advanced export features
 - ✅ Batch operations
 - ✅ Advanced reporting

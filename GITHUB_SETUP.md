@@ -1,4 +1,4 @@
-# 🚀 GitHub Repository Setup Guide
+# GitHub Repository Setup Guide
 
 ## Quick Setup Instructions
 
@@ -61,4 +61,6 @@ Just follow the prompts for your username and repository name.
 
 ---
 
-**Next: Follow DEPLOY_NOW.md for post-deployment steps**
+## Next Steps
+
+Follow DEPLOY_NOW.md for post-deployment steps
