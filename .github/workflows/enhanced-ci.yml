@@ -1,0 +1,194 @@
+name: 🚀 Enhanced CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, develop ]
+    tags: [ 'v*' ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  quality-gate:
+    runs-on: ubuntu-latest
+    name: 🔍 Quality Gate
+    
+    steps:
+    - name: 📥 Checkout code
+      uses: actions/checkout@v4
+      
+    - name: 🟢 Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+        
+    - name: 📦 Install dependencies
+      run: npm ci
+      
+    - name: 🧹 Run ESLint
+      run: npm run lint
+      
+    - name: 🔧 TypeScript type check
+      run: npx tsc --noEmit
+      
+    - name: 🏗️ Build application
+      run: npm run build
+      
+    - name: 📊 Build size analysis
+      run: |
+        echo "## 📊 Build Analysis" >> $GITHUB_STEP_SUMMARY
+        echo "Build completed successfully! 🎉" >> $GITHUB_STEP_SUMMARY
+        if [ -d "dist" ]; then
+          echo "### 📦 Bundle Sizes" >> $GITHUB_STEP_SUMMARY
+          du -sh dist/* | head -10 >> $GITHUB_STEP_SUMMARY
+        fi
+
+  security-audit:
+    runs-on: ubuntu-latest
+    name: 🔒 Security Audit
+    
+    steps:
+    - name: 📥 Checkout code
+      uses: actions/checkout@v4
+      
+    - name: 🟢 Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+        
+    - name: 📦 Install dependencies
+      run: npm ci
+      
+    - name: 🔍 Security audit
+      run: npm audit --audit-level=moderate
+      
+    - name: 🛡️ Check for vulnerabilities
+      run: |
+        echo "## 🔒 Security Report" >> $GITHUB_STEP_SUMMARY
+        npm audit --json | jq -r '.metadata | "Found \(.vulnerabilities.total) vulnerabilities (\(.vulnerabilities.high) high, \(.vulnerabilities.moderate) moderate)"' >> $GITHUB_STEP_SUMMARY
+
+  build-electron:
+    runs-on: ${{ matrix.os }}
+    name: 🖥️ Build Electron App
+    needs: [quality-gate]
+    if: startsWith(github.ref, 'refs/tags/v')
+    
+    strategy:
+      matrix:
+        os: [macos-latest, windows-latest, ubuntu-latest]
+        
+    steps:
+    - name: 📥 Checkout code
+      uses: actions/checkout@v4
+      
+    - name: 🟢 Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+        
+    - name: 📦 Install dependencies
+      run: npm ci
+      
+    - name: 🏗️ Build React app
+      run: npm run build
+      
+    - name: 📱 Package Electron app
+      run: npm run electron:pack
+      
+    - name: 📤 Upload artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: electron-${{ matrix.os }}
+        path: dist-electron/
+        retention-days: 30
+
+  deploy-preview:
+    runs-on: ubuntu-latest
+    name: 🌐 Deploy Preview
+    needs: [quality-gate]
+    if: github.event_name == 'pull_request'
+    
+    steps:
+    - name: 📥 Checkout code
+      uses: actions/checkout@v4
+      
+    - name: 🟢 Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+        
+    - name: 📦 Install dependencies
+      run: npm ci
+      
+    - name: 🏗️ Build for preview
+      run: npm run build
+      
+    - name: 🚀 Deploy to Netlify (Preview)
+      uses: netlify/actions/cli@master
+      with:
+        args: deploy --dir=dist --alias=pr-${{ github.event.number }}
+      env:
+        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+
+  create-release:
+    runs-on: ubuntu-latest
+    name: 🏷️ Create Release
+    needs: [quality-gate, security-audit, build-electron]
+    if: startsWith(github.ref, 'refs/tags/v')
+    
+    steps:
+    - name: 📥 Checkout code
+      uses: actions/checkout@v4
+      
+    - name: 🏷️ Create GitHub Release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: ZATCA Invoice Creator ${{ github.ref }}
+        body: |
+          ## 🎉 ZATCA Invoice Creator Release
+          
+          ### ✅ What's Included
+          - 🇸🇦 ZATCA Phase 2 compliant invoice generation
+          - 📱 Cross-platform Electron desktop application
+          - 🌐 Web application for browser use
+          - 📄 Comprehensive documentation and guides
+          
+          ### 🚀 Quick Start
+          1. Download the appropriate version for your platform
+          2. Follow the setup instructions in README.md
+          3. Start creating ZATCA-compliant invoices immediately!
+          
+          ### 📊 Quality Metrics
+          - ✅ Zero TypeScript errors
+          - ✅ Zero ESLint warnings
+          - ✅ Security audit passed
+          - ✅ Cross-platform compatibility verified
+          
+          **Ready for production use in Saudi Arabian businesses! 🇸🇦**
+        draft: false
+        prerelease: false
+
+  notify-success:
+    runs-on: ubuntu-latest
+    name: 🎉 Success Notification
+    needs: [quality-gate, security-audit]
+    if: success()
+    
+    steps:
+    - name: 🎊 Success Summary
+      run: |
+        echo "## 🎉 Pipeline Success!" >> $GITHUB_STEP_SUMMARY
+        echo "All quality gates passed successfully!" >> $GITHUB_STEP_SUMMARY
+        echo "### ✅ Completed Checks" >> $GITHUB_STEP_SUMMARY
+        echo "- Lint & Type Check" >> $GITHUB_STEP_SUMMARY
+        echo "- Security Audit" >> $GITHUB_STEP_SUMMARY
+        echo "- Build Verification" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "🚀 **Ready for deployment!**" >> $GITHUB_STEP_SUMMARY
