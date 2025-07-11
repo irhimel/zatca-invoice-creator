@@ -12,6 +12,7 @@ A production-ready, ZATCA Phase 2-compliant invoice generation application for S
 ## 🏆 **PRODUCTION-READY STATUS** ✅
 
 ### ✅ **Quality Assurance Complete**
+
 - **Zero TypeScript errors** - Full type safety across entire codebase
 - **Zero ESLint warnings** - Clean, maintainable code standards
 - - **100% typed interfaces** - No `any` types, explicit typing everywhere
@@ -20,6 +21,7 @@ A production-ready, ZATCA Phase 2-compliant invoice generation application for S
 - **Git version control** - Clean commit history with tagged releases
 
 ### ✅ **Enterprise-Grade Architecture**
+
 - **React 19 + TypeScript** - Modern, type-safe frontend
 - **Electron** - Cross-platform desktop application
 - **Context management** - Clean state management patterns
@@ -29,6 +31,7 @@ A production-ready, ZATCA Phase 2-compliant invoice generation application for S
 ## 🏆 **BUSINESS-READY FEATURES**
 
 ### 📊 **Core Invoice Management**
+
 - ✅ **ZATCA Phase 2 Compliance** - Full support for simplified tax invoices
 - ✅ **QR Code Generation** - Automatic ZATCA-compliant QR codes
 - ✅ **UBL 2.1 XML** - Standard invoice format generation
@@ -37,6 +40,7 @@ A production-ready, ZATCA Phase 2-compliant invoice generation application for S
 - ✅ **Real-time Validation** - Live form validation and error checking
 
 ### 🏢 **Business Operations**
+
 - ✅ **Client Management** - Complete CRM for customer data
 - ✅ **Quote System** - Create and convert quotes to invoices
 - ✅ **Template System** - Save and reuse invoice templates
@@ -45,6 +49,7 @@ A production-ready, ZATCA Phase 2-compliant invoice generation application for S
 - ✅ **Azure SQL Integration** - Enterprise-grade database connectivity
 
 ### 🔧 **Advanced Features**
+
 - ✅ **Bilingual UI** - Arabic and English interface
 - ✅ **Auto-save** - Never lose your work
 - ✅ **Export Tools** - Excel, CSV, PDF exports with progress tracking
@@ -57,68 +62,87 @@ A production-ready, ZATCA Phase 2-compliant invoice generation application for S
 ### **Option 1: Automated Setup (Recommended)**
 
 ```bash
+
 # 1. Run automated setup
+
 ./setup.sh          # macOS/Linux
 setup.bat           # Windows
 
 # 2. Start development
-./dev-start.sh      # macOS/Linux  
+
+./dev-start.sh      # macOS/Linux
 dev-start.bat       # Windows
+
 ```
 
 ### **Option 2: Manual Setup**
 
 ```bash
+
 # 1. Install dependencies
+
 npm install
 
 # 2. Configure environment
+
 cp .env.example .env
+
 # Edit .env with your business details
 
 # 3. Start development
+
 npm run dev         # Web dev server
 npm run electron-dev # Electron app
+
 ```
 
 ### **Option 3: Production Build**
 
 ```bash
+
 # Build for distribution
+
 ./build-production.sh   # macOS/Linux
 build-production.bat   # Windows
 
 # Or manually
+
 npm run dist
+
 ```
 
 ## � **SETUP CHECKLIST**
 
 ### ✅ **Day 1: Initial Setup**
+
 - [ ] Run `./setup.sh` (or `setup.bat` on Windows)
 - [ ] Edit `.env` file with your company information
 - [ ] Test the application: `./dev-start.sh`
 - [ ] Create your first test invoice
 
 ### ✅ **Day 2: Database Configuration**
+
 - [ ] Set up Azure SQL Database (recommended) or local database
 - [ ] Run `database-setup.sql` to create tables
 - [ ] Test database connectivity
 - [ ] Import existing client data (if any)
 
 ### ✅ **Day 3: ZATCA Integration**
+
 - [ ] Register with ZATCA for API credentials
 - [ ] Configure `zatca-config.json` with your credentials
 - [ ] Test invoice validation in sandbox mode
 - [ ] Submit test invoices to ZATCA
 
 ### ✅ **Day 4: Production Deployment**
+
 - [ ] Build production version: `./build-production.sh`
 - [ ] Install on business computers
 - [ ] Configure user settings and preferences
 - [ ] Switch ZATCA to production mode
 
 ### ✅ **Day 5: Go Live**
+
 - [ ] Train staff on the application
 - [ ] Create first live invoice
 - [ ] Verify ZATCA submission successful
@@ -141,6 +165,7 @@ npm run dist
 ## 🏗️ **TECH STACK**
 
 ### **Frontend & UI**
+
 - **[React 19](https://react.dev/)** - Modern UI library with latest features
 - **[TypeScript](https://typescriptlang.org/)** - Type-safe development
 - **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first styling
@@ -148,16 +173,19 @@ npm run dist
 - **[date-fns](https://date-fns.org/)** - Robust date handling
 
 ### **Desktop & Build**
+
 - **[Electron](https://electronjs.org/)** - Cross-platform desktop framework
 - **[Vite](https://vitejs.dev/)** - Ultra-fast build tool and dev server
 - **[electron-builder](https://electron.build/)** - Application packaging
 
 ### **ZATCA & PDF**
+
 - **[jsPDF](https://github.com/parallax/jsPDF)** - PDF generation
 - **[html2canvas](https://github.com/niklasvh/html2canvas)** - HTML to canvas conversion
 - **Custom ZATCA modules** - QR codes, UBL XML, cryptographic signing
 
 ### **Database & Storage**
+
 - **[Azure SQL](https://azure.microsoft.com/sql/)** - Cloud database (recommended)
 - **[mssql](https://www.npmjs.com/package/mssql)** - SQL Server connectivity
 - **[IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API)** - Offline storage
@@ -166,6 +194,7 @@ npm run dist
 ## 📁 **PROJECT STRUCTURE**
 
 ```
+
 ZATCA Invoice Creator/
 ├── 📄 Configuration Files
 │   ├── .env.example          # Environment template
@@ -201,6 +230,7 @@ ZATCA Invoice Creator/
 └── 🏗️ Build Output
     ├── dist/                # Web build output
     └── release/             # Electron distributables
+
 ```
 
 ## 🔐 **SECURITY & COMPLIANCE**
@@ -228,38 +258,57 @@ ZATCA Invoice Creator/
 ### **Common Issues**
 
 **Build Fails**
+
 ```bash
+
 # Clear and reinstall dependencies
+
 rm -rf node_modules package-lock.json
 npm install
 npm run build
+
 ```
 
 **Electron Won't Start**
+
 ```bash
+
 # Check system status
+
 ./health-check.sh
 
 # Verify all files present
+
 ls -la public/electron.js public/preload.js
+
 ```
 
 **Database Connection Issues**
+
 ```bash
+
 # Verify .env configuration
+
 cat .env | grep -E "(AZURE_SQL|DB_)"
 
 # Test database connectivity
+
 npm run test-db
+
 ```
 
 **ZATCA Integration Problems**
+
 ```bash
+
 # Verify ZATCA configuration
+
 cat zatca-config.json
 
 # Check sandbox connectivity
+
 npm run test-zatca
+
 ```
 
 ## 🌟 **BUSINESS BENEFITS**
@@ -291,6 +340,7 @@ This is a business-ready application designed for Saudi Arabian companies requir
 ## 🛠️ **DEVELOPMENT STATUS**
 
 ### ✅ **Completed (v1.0.0-stable-clean)**
+
 - Full TypeScript refactoring with zero errors
 - Comprehensive type safety and interface definitions
 - ESLint configuration with zero warnings
@@ -301,6 +351,7 @@ This is a business-ready application designed for Saudi Arabian companies requir
 - Git version control with clean history
 
 ### 🎯 **Next Steps (Optional Enhancements)**
+
 - Database backup/export functionality
 - Progressive Web App (PWA) capabilities
 - Batch invoice processing
@@ -311,6 +362,7 @@ This is a business-ready application designed for Saudi Arabian companies requir
 ## 🔧 **TECHNICAL SPECIFICATIONS**
 
 ### **Tech Stack**
+
 - **Framework**: Electron 28+ (cross-platform desktop)
 - **Frontend**: React 19 with TypeScript 5.3+
 - **Styling**: Tailwind CSS 3.4+
@@ -323,8 +375,9 @@ This is a business-ready application designed for Saudi Arabian companies requir
 - **State Management**: React Context with TypeScript
 
 ### **Architecture Highlights**
+
 - **Type-Safe**: 100% TypeScript with explicit interfaces
-- **Modular**: Service layer architecture for maintainability  
+- **Modular**: Service layer architecture for maintainability
 - **Secure**: Electron security best practices (no nodeIntegration)
 - **Offline-First**: Local SQLite with cloud synchronization
 - **ZATCA Compliant**: Full Phase 2 implementation

@@ -2,43 +2,54 @@
 
 ## IMMEDIATE ACTION ITEMS
 
-Your ZATCA Invoice Creator is **100% production-ready**! Here's what you can do RIGHT NOW:  
+Your ZATCA Invoice Creator is **100% production-ready**! Here's what you can do RIGHT NOW:
 *Last Updated: July 11, 2025*re's what you can do RIGHT NOW:
 
 ### 1️⃣ Deploy to GitHub (2 minutes)
 
 ```bash
-# Run the automated setup:
+
+# Run the automated setup
+
 ./setup-github.sh
 
-# This will:
+# This will
 # ✅ Prompt for your GitHub username and repository name
 # ✅ Set up the remote repository connection
 # ✅ Push all code, documentation, and tags to GitHub
 # ✅ Trigger the CI/CD pipeline automatically
+
 ```
 
 ### 2️⃣ Start Local Development
 
 ```bash
-# Start development server:
+
+# Start development server
+
 npm run dev
 
 # Open browser to: http://localhost:5173
-# Begin creating invoices immediately!
+# Begin creating invoices immediately
+
 ```
 
 ### 3️⃣ Build for Production
 
 ```bash
-# Create production build:
+
+# Create production build
+
 npm run build
 
-# Package as Electron app:
+# Package as Electron app
+
 npm run electron:pack
 
-# Create installer:
+# Create installer
+
 npm run electron:dist
+
 ```
 
 ---
@@ -125,14 +136,15 @@ Run this command to deploy to GitHub immediately:
 
 ```bash
 ./setup-github.sh
+
 ```
 
 **Your ZATCA Invoice Creator is ready to change how businesses handle invoicing in Saudi Arabia!** 🇸🇦
 
 ---
 
-*Status: Production Ready ✅*  
-*Version: v1.0.0-stable-clean*  
+*Status: Production Ready ✅*
+*Version: v1.0.0-stable-clean*
 *Last Updated: July 11, 2025*
 
  • The app should be offline capable, with smooth animations for adding/removing invoices and navigating between pages.

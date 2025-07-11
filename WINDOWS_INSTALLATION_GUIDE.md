@@ -24,6 +24,7 @@ Your ZATCA Invoice Creator application has been successfully built as a Windows 
 2. Select **"Run as administrator"** (recommended)
 3. If Windows Defender SmartScreen appears, click **"More info"** → **"Run anyway"**
 4. Follow the installation wizard:
+
    - Choose installation directory (default: `C:\Users\[Username]\AppData\Local\Programs\ZATCA Invoice Creator`)
    - Select whether to create desktop shortcut
    - Click **"Install"**
@@ -151,7 +152,7 @@ For installation support:
 Your Windows installer is production-ready and includes:
 
 - ✅ **Complete ZATCA compliance** - Phase 2 ready
-- ✅ **Professional interface** - Modern, intuitive design  
+- ✅ **Professional interface** - Modern, intuitive design
 - ✅ **Offline operation** - Works without internet
 - ✅ **Enterprise features** - Client management, quotes, exports
 - ✅ **Data security** - Encrypted storage and transmission
@@ -161,5 +162,5 @@ Your Windows installer is production-ready and includes:
 ---
 
 *Generated: July 10, 2025*
-*Installer Version: 1.0.0*  
+*Installer Version: 1.0.0*
 *Platform: Windows x64*

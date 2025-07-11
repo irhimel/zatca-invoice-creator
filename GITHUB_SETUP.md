@@ -16,23 +16,29 @@
 Replace `YOUR_USERNAME` with your actual GitHub username:
 
 ```bash
+
 # SSH (recommended if you have SSH keys set up)
+
 git remote add origin git@github.com:YOUR_USERNAME/zatca-invoice-creator.git
 
 # OR HTTPS (works for everyone)
+
 git remote add origin https://github.com/YOUR_USERNAME/zatca-invoice-creator.git
+
 ```
 
 ### Step 3: Push to GitHub
 
 ```bash
 git push -u origin main --tags
+
 ```
 
 ### Step 4: Verify Setup
 
 ```bash
 git remote -v
+
 ```
 
 You should see your origin remote listed.
@@ -45,6 +51,7 @@ Our `setup-github.sh` script can handle steps 2-3 automatically:
 
 ```bash
 ./setup-github.sh
+
 ```
 
 Just follow the prompts for your username and repository name.
@@ -53,11 +60,11 @@ Just follow the prompts for your username and repository name.
 
 ## After Successful Push
 
-✅ Your repository will be live on GitHub  
-✅ CI/CD pipeline will run automatically  
-✅ All documentation will be available  
-✅ Tags and releases will be visible  
-✅ Ready for team collaboration  
+✅ Your repository will be live on GitHub
+✅ CI/CD pipeline will run automatically
+✅ All documentation will be available
+✅ Tags and releases will be visible
+✅ Ready for team collaboration
 
 ---
 

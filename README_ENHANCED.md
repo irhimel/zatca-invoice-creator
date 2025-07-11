@@ -2,7 +2,7 @@
 
 <div align="center">
 
-**Production-Ready ZATCA Phase 2 Compliant Invoice Generator**  
+**Production-Ready ZATCA Phase 2 Compliant Invoice Generator**
 *Built for Saudi Arabian Businesses*
 
 [![CI/CD Pipeline](https://github.com/YOUR_USERNAME/zatca-invoice-creator/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/zatca-invoice-creator/actions)
@@ -26,11 +26,11 @@
 
 > **The only invoice solution you need for Saudi Arabian business compliance**
 
-✅ **Instant ZATCA Compliance** - Generate Phase 2 compliant invoices immediately  
-✅ **Zero Configuration** - Works out of the box with sensible defaults  
-✅ **Enterprise Grade** - Built with TypeScript for maximum reliability  
-✅ **Cross-Platform** - Windows, macOS, Linux, and Web support  
-✅ **Production Ready** - Zero errors, comprehensive testing, CI/CD pipeline  
+✅ **Instant ZATCA Compliance** - Generate Phase 2 compliant invoices immediately
+✅ **Zero Configuration** - Works out of the box with sensible defaults
+✅ **Enterprise Grade** - Built with TypeScript for maximum reliability
+✅ **Cross-Platform** - Windows, macOS, Linux, and Web support
+✅ **Production Ready** - Zero errors, comprehensive testing, CI/CD pipeline
 
 ---
 
@@ -39,16 +39,19 @@
 ### **Option 1: Download & Run (Recommended)**
 
 ```bash
+
 # Download the latest release for your platform
 # Windows: .exe installer
-# macOS: .dmg installer  
+# macOS: .dmg installer
 # Linux: .AppImage or .deb package
 
-# Or clone and run locally:
+# Or clone and run locally
+
 git clone https://github.com/YOUR_USERNAME/zatca-invoice-creator.git
 cd zatca-invoice-creator
 npm install
 npm run dev
+
 ```
 
 ### **Option 2: Web Version**
@@ -124,6 +127,7 @@ npm run dev
 ## 🏗️ **Architecture Overview**
 
 ```
+
 zatca-invoice-creator/
 ├── 🎨 Frontend (React 19 + TypeScript)
 │   ├── Context-based state management
@@ -141,6 +145,7 @@ zatca-invoice-creator/
     ├── Electron (desktop)
     ├── Web application
     └── Progressive Web App
+
 ```
 
 ---
@@ -153,13 +158,16 @@ zatca-invoice-creator/
 npm run build
 npm run electron:pack    # Package for current OS
 npm run electron:dist    # Create installer
+
 ```
 
 ### **🌐 Web Application**
 
 ```bash
 npm run build           # Creates optimized build
+
 # Deploy 'dist' folder to any hosting provider
+
 ```
 
 ### **☁️ Cloud Deployment**
@@ -194,20 +202,25 @@ npm run build           # Creates optimized build
 ### **Development Workflow**
 
 ```bash
+
 # Setup
+
 git clone https://github.com/YOUR_USERNAME/zatca-invoice-creator.git
 cd zatca-invoice-creator
 npm install
 
 # Development
+
 npm run dev         # Start dev server
 npm run lint        # Check code quality
 npm run build       # Production build
 npm run test        # Run tests (when implemented)
 
 # Quality Assurance
+
 npm run type-check  # TypeScript validation
 npm audit           # Security check
+
 ```
 
 ### **Contributing**
@@ -230,11 +243,12 @@ npm audit           # Security check
 - 🏗️ **Enterprise** - Scalable, secure, auditable solution
 
 ### **Success Stories**
+
 >
-> *"Reduced our invoice processing time from hours to minutes while ensuring 100% ZATCA compliance."*  
+> *"Reduced our invoice processing time from hours to minutes while ensuring 100% ZATCA compliance."*
 > — Saudi Business Owner
 
-> *"The TypeScript codebase makes it easy to customize and extend for our specific needs."*  
+> *"The TypeScript codebase makes it easy to customize and extend for our specific needs."*
 > — Development Team Lead
 
 ---

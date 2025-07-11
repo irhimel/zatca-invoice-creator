@@ -5,30 +5,35 @@ This guide will set up your ZATCA-compliant invoice application for immediate bu
 ## 📋 **SETUP CHECKLIST**
 
 ### ✅ **Phase 1: Environment Configuration (Day 1)**
+
 - [ ] Create environment variables file
 - [ ] Configure database connection
 - [ ] Set up ZATCA credentials
 - [ ] Configure application settings
 
 ### ✅ **Phase 2: Database Setup (Day 1-2)**
+
 - [ ] Choose database option (Azure SQL or Local)
 - [ ] Initialize database schema
 - [ ] Test database connection
 - [ ] Set up data backup
 
 ### ✅ **Phase 3: ZATCA Integration (Day 2-3)**
+
 - [ ] Register with ZATCA
 - [ ] Configure sandbox environment
 - [ ] Test invoice validation
 - [ ] Switch to production
 
 ### ✅ **Phase 4: Application Deployment (Day 3-4)**
+
 - [ ] Build production application
 - [ ] Install on business computers
 - [ ] Configure user settings
 - [ ] Import existing data
 
 ### ✅ **Phase 5: Training & Go-Live (Day 4-5)**
+
 - [ ] Train staff on application
 - [ ] Create first test invoice
 - [ ] Verify ZATCA submission

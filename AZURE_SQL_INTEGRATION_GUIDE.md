@@ -7,7 +7,9 @@
 Update your `.env` file with your Azure SQL Database details:
 
 ```env
+
 # Azure SQL Database Configuration
+
 AZURE_SQL_SERVER=roman-zatca-server.database.windows.net
 AZURE_SQL_DATABASE=invoicedb
 AZURE_SQL_USERNAME=your_username
@@ -15,15 +17,18 @@ AZURE_SQL_PASSWORD=your_password
 AZURE_SQL_PORT=1433
 
 # Database Configuration
+
 DB_CONNECTION_TIMEOUT=30000
 DB_REQUEST_TIMEOUT=15000
 DB_RETRY_ATTEMPTS=3
 DB_RETRY_DELAY=1000
 
 # Sync Configuration
+
 SYNC_BATCH_SIZE=50
 SYNC_INTERVAL=300000
 OFFLINE_RETENTION_DAYS=30
+
 ```
 
 ### 2. Database Schema
@@ -52,6 +57,7 @@ CREATE TABLE audit_logs (
     timestamp DATETIME2 DEFAULT GETDATE(),
     details NVARCHAR(MAX)
 );
+
 ```
 
 ## 💼 **Usage Examples**
@@ -63,6 +69,7 @@ import { dbService } from '../services/database';
 
 // Initialize the database service
 await dbService.initialize();
+
 ```
 
 ### Create Invoice (Online/Offline)
@@ -80,6 +87,7 @@ const invoice: ZATCAInvoice = {
 // Create invoice (automatically handles online/offline)
 const invoiceId = await dbService.createInvoice(invoice);
 console.log('Invoice created:', invoiceId);
+
 ```
 
 ### Get Invoices with Filtering
@@ -100,6 +108,7 @@ const filteredInvoices = await dbService.getInvoices({
     orderBy: 'createdAt',
     orderDirection: 'DESC'
 });
+
 ```
 
 ### Update Invoice
@@ -111,6 +120,7 @@ await dbService.updateInvoice('INV-001', {
     status: 'reported',
     reportedAt: new Date().toISOString()
 });
+
 ```
 
 ### Sync Offline Data
@@ -134,6 +144,7 @@ const syncResult = await dbService.syncOfflineDataToAzure({
         console.log(`Batch completed: ${result.syncedCount} synced`);
     }
 });
+
 ```
 
 ### Check Connection Status
@@ -148,6 +159,7 @@ console.log('Database Status:', {
     autoSyncActive: status.autoSyncActive,
     offlineCount: status.offlineCount
 });
+
 ```
 
 ## 🔧 **Advanced Features**
@@ -168,6 +180,7 @@ try {
         console.error('Invoice creation failed:', error);
     }
 }
+
 ```
 
 ### Batch Operations
@@ -182,6 +195,7 @@ const invoices = [invoice1, invoice2, invoice3];
 for (const invoice of invoices) {
     await azureSQL.createInvoice(invoice);
 }
+
 ```
 
 ### Metrics and Monitoring
@@ -197,6 +211,7 @@ console.log('Database Metrics:', {
     failedSyncCount: metrics.failedSyncCount,
     averageResponseTime: metrics.averageResponseTime
 });
+
 ```
 
 ## 📊 **React Integration**
@@ -219,7 +234,7 @@ export function useDatabase() {
         const updateStatus = async () => {
             const dbStatus = dbService.getConnectionStatus();
             const metrics = await dbService.getMetrics();
-            
+
             setStatus({
                 ...dbStatus,
                 offlineCount: metrics.pendingSyncCount
@@ -238,6 +253,7 @@ export function useDatabase() {
         getInvoices: (filters) => dbService.getInvoices(filters)
     };
 }
+
 ```
 
 ### Usage in Component
@@ -264,11 +280,12 @@ export function InvoicePanel() {
                     </button>
                 )}
             </div>
-            
+
             {/* Your invoice form here */}
         </div>
     );
 }
+
 ```
 
 ## 🛡️ **Security Best Practices**
@@ -322,6 +339,7 @@ try {
             console.error('Database error:', error);
     }
 }
+
 ```
 
 This comprehensive Azure SQL Database integration provides a robust, offline-first solution for your ZATCA-compliant invoice application with automatic synchronization and full error handling.

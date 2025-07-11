@@ -9,12 +9,14 @@ This project has been fully refactored, tested, and is ready for deployment with
 ### 1. Create GitHub Repository
 
 ```bash
+
 # Create a new repository on GitHub (via web interface)
-# Then connect this local repository:
+# Then connect this local repository
 
 git remote add origin https://github.com/YOUR_USERNAME/zatca-invoice-creator.git
 git branch -M main
 git push -u origin main --tags
+
 ```
 
 ### 2. Verify CI/CD Pipeline
@@ -41,6 +43,7 @@ npm run dev        # Start development server
 npm run build      # Build for production
 npm run lint       # Run linter
 npm run preview    # Preview production build
+
 ```
 
 ## Production Deployment
@@ -51,6 +54,7 @@ npm run preview    # Preview production build
 npm run build              # Build React app
 npm run electron:pack      # Package Electron app
 npm run electron:dist      # Create distributables
+
 ```
 
 ### Web Version (Optional)
@@ -59,7 +63,9 @@ The React app can also be deployed as a web application:
 
 ```bash
 npm run build
+
 # Deploy 'dist' folder to your hosting provider
+
 ```
 
 ## 🔧 Environment Configuration
@@ -69,16 +75,20 @@ npm run build
 Create a `.env` file for local development:
 
 ```env
+
 # Database Configuration
+
 AZURE_SQL_SERVER=your-server.database.windows.net
 AZURE_SQL_DATABASE=your-database-name
 AZURE_SQL_USERNAME=your-username
 AZURE_SQL_PASSWORD=your-password
 
 # ZATCA Configuration
+
 ZATCA_ENVIRONMENT=sandbox  # or 'production'
 ZATCA_CERTIFICATE_PATH=path/to/your/certificate.p12
 ZATCA_CERTIFICATE_PASSWORD=your-cert-password
+
 ```
 
 ## 📋 Quality Assurance
@@ -88,10 +98,12 @@ ZATCA_CERTIFICATE_PASSWORD=your-cert-password
 Follow the comprehensive guide in `QA_TESTING_GUIDE.md`:
 
 ```bash
+
 # Run through all test scenarios
 # Test invoice creation, client management, PDF export
 # Verify ZATCA compliance features
 # Test offline/online synchronization
+
 ```
 
 ### Automated Testing
@@ -101,6 +113,7 @@ npm run test              # Run unit tests (when implemented)
 npm run test:e2e          # Run E2E tests (when implemented)
 npm run lint              # Code quality checks
 npm run type-check        # TypeScript validation
+
 ```
 
 ## 🏷️ Version Management
@@ -118,13 +131,17 @@ This tag represents a clean, production-ready state with:
 ### Release Process
 
 ```bash
+
 # For new features
+
 git tag v1.1.0
 git push origin main --tags
 
 # For patches
+
 git tag v1.0.1
 git push origin main --tags
+
 ```
 
 ## 🛠️ Next Steps

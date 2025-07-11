@@ -8,6 +8,7 @@
    npm run dev
    # or
    npm run electron-dev
+
    ```
 
 2. **Verify Clean State**
@@ -187,17 +188,20 @@
 ### Daily Workflow Simulation
 
 1. **Morning Setup**
+
    - [ ] Open app
    - [ ] Check pending invoices
    - [ ] Review ZATCA sync status
 
 2. **Invoice Creation Flow**
+
    - [ ] Create 3-5 invoices
    - [ ] Use different clients
    - [ ] Test various tax scenarios
    - [ ] Generate PDFs
 
 3. **End of Day**
+
    - [ ] Export daily reports
    - [ ] Backup data
    - [ ] Submit to ZATCA
@@ -246,14 +250,15 @@ When you find issues, report them with:
 **Bug Title:** [Brief description]
 
 **Environment:**
+
 - OS: [macOS/Windows/Browser]
 - Version: [App version]
 - Browser: [If web version]
 
 **Steps to Reproduce:**
-1. 
-2. 
-3. 
+1.
+2.
+3.
 
 **Expected Result:**
 [What should happen]
@@ -265,6 +270,7 @@ When you find issues, report them with:
 [If applicable]
 
 **Priority:** [Critical/High/Medium/Low]
+
 ```
 
 ---
@@ -274,7 +280,7 @@ When you find issues, report them with:
 Once you've completed this QA testing:
 
 - [ ] **Functional Testing Complete**
-- [ ] **Performance Testing Complete**  
+- [ ] **Performance Testing Complete**
 - [ ] **Security Testing Complete**
 - [ ] **Cross-Platform Testing Complete**
 - [ ] **Documentation Updated**
