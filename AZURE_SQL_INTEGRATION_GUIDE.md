@@ -29,7 +29,7 @@ SYNC_BATCH_SIZE=50
 SYNC_INTERVAL=300000
 OFFLINE_RETENTION_DAYS=30
 
-```
+```bash
 
 ### 2. Database Schema
 
@@ -58,7 +58,7 @@ CREATE TABLE audit_logs (
     details NVARCHAR(MAX)
 );
 
-```
+```bash
 
 ## 💼 **Usage Examples**
 
@@ -70,7 +70,7 @@ import { dbService } from '../services/database';
 // Initialize the database service
 await dbService.initialize();
 
-```
+```bash
 
 ### Create Invoice (Online/Offline)
 
@@ -88,7 +88,7 @@ const invoice: ZATCAInvoice = {
 const invoiceId = await dbService.createInvoice(invoice);
 console.log('Invoice created:', invoiceId);
 
-```
+```bash
 
 ### Get Invoices with Filtering
 
@@ -109,7 +109,7 @@ const filteredInvoices = await dbService.getInvoices({
     orderDirection: 'DESC'
 });
 
-```
+```bash
 
 ### Update Invoice
 
@@ -121,7 +121,7 @@ await dbService.updateInvoice('INV-001', {
     reportedAt: new Date().toISOString()
 });
 
-```
+```bash
 
 ### Sync Offline Data
 
@@ -145,7 +145,7 @@ const syncResult = await dbService.syncOfflineDataToAzure({
     }
 });
 
-```
+```bash
 
 ### Check Connection Status
 
@@ -160,7 +160,7 @@ console.log('Database Status:', {
     offlineCount: status.offlineCount
 });
 
-```
+```bash
 
 ## 🔧 **Advanced Features**
 
@@ -181,7 +181,7 @@ try {
     }
 }
 
-```
+```bash
 
 ### Batch Operations
 
@@ -196,7 +196,7 @@ for (const invoice of invoices) {
     await azureSQL.createInvoice(invoice);
 }
 
-```
+```bash
 
 ### Metrics and Monitoring
 
@@ -212,7 +212,7 @@ console.log('Database Metrics:', {
     averageResponseTime: metrics.averageResponseTime
 });
 
-```
+```bash
 
 ## 📊 **React Integration**
 
@@ -254,7 +254,7 @@ export function useDatabase() {
     };
 }
 
-```
+```bash
 
 ### Usage in Component
 
@@ -266,27 +266,27 @@ export function InvoicePanel() {
     const { status, syncNow, createInvoice } = useDatabase();
 
     return (
-        <div>
-            <div className="status-panel">
-                <div className={`status ${status.azure ? 'connected' : 'disconnected'}`}>
+
+
+
                     Azure SQL: {status.azure ? 'Connected' : 'Disconnected'}
-                </div>
-                <div className={`status ${status.online ? 'online' : 'offline'}`}>
+
+
                     Network: {status.online ? 'Online' : 'Offline'}
-                </div>
+
                 {status.offlineCount > 0 && (
                     <button onClick={syncNow}>
                         Sync {status.offlineCount} pending invoices
                     </button>
                 )}
-            </div>
+
 
             {/* Your invoice form here */}
-        </div>
+
     );
 }
 
-```
+```bash
 
 ## 🛡️ **Security Best Practices**
 
@@ -340,6 +340,5 @@ try {
     }
 }
 
-```
-
+```bash
 This comprehensive Azure SQL Database integration provides a robust, offline-first solution for your ZATCA-compliant invoice application with automatic synchronization and full error handling.

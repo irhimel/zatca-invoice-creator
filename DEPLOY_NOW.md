@@ -14,12 +14,16 @@ Your ZATCA Invoice Creator is **100% production-ready**! Here's what you can do 
 ./setup-github.sh
 
 # This will
+
 # ✅ Prompt for your GitHub username and repository name
+
 # ✅ Set up the remote repository connection
+
 # ✅ Push all code, documentation, and tags to GitHub
+
 # ✅ Trigger the CI/CD pipeline automatically
 
-```
+```bash
 
 ### 2️⃣ Start Local Development
 
@@ -30,9 +34,10 @@ Your ZATCA Invoice Creator is **100% production-ready**! Here's what you can do 
 npm run dev
 
 # Open browser to: http://localhost:5173
+
 # Begin creating invoices immediately
 
-```
+```bash
 
 ### 3️⃣ Build for Production
 
@@ -50,8 +55,7 @@ npm run electron:pack
 
 npm run electron:dist
 
-```
-
+```bash
 ---
 
 ## 📋 **WHAT YOU HAVE RIGHT NOW**
@@ -102,19 +106,19 @@ npm run electron:dist
 
 ### Option B: Start Local Development
 
-1. Run `npm run dev`
-2. Open <http://localhost:5173>
-3. Start creating and testing invoices
-4. Customize branding and settings
-5. Deploy to GitHub when ready
+6. Run `npm run dev`
+7. Open <http://localhost:5173>
+8. Start creating and testing invoices
+9. Customize branding and settings
+10. Deploy to GitHub when ready
 
 ### Option C: Build for Production
 
-1. Run `npm run build` to create production files
-2. Run `npm run electron:pack` for desktop application
-3. Deploy to your preferred hosting platform
-4. Configure production database connections
-5. Set up ZATCA production certificates
+11. Run `npm run build` to create production files
+12. Run `npm run electron:pack` for desktop application
+13. Deploy to your preferred hosting platform
+14. Configure production database connections
+15. Set up ZATCA production certificates
 
 ---
 
@@ -137,8 +141,7 @@ Run this command to deploy to GitHub immediately:
 ```bash
 ./setup-github.sh
 
-```
-
+```bash
 **Your ZATCA Invoice Creator is ready to change how businesses handle invoicing in Saudi Arabia!** 🇸🇦
 
 ---

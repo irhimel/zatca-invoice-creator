@@ -22,15 +22,14 @@
 
 All installers are located in the `release/` directory:
 
-```
-
+```bash
 release/
 ├── ZATCA Invoice Creator-1.0.0-x64.dmg      (Intel)
 ├── ZATCA Invoice Creator-1.0.0-arm64.dmg    (Apple Silicon)
 ├── ZATCA Invoice Creator-1.0.0-x64.zip      (Intel)
 └── ZATCA Invoice Creator-1.0.0-arm64.zip    (Apple Silicon)
 
-```
+```bash
 
 ## 🖥️ System Requirements
 
@@ -60,9 +59,9 @@ release/
 
 ### ZIP Installation (Alternative)
 
-1. Double-click the `.zip` file to extract
-2. Move "ZATCA Invoice Creator.app" to Applications folder
-3. Launch the app from Applications or Spotlight
+6. Double-click the `.zip` file to extract
+7. Move "ZATCA Invoice Creator.app" to Applications folder
+8. Launch the app from Applications or Spotlight
 
 ## 🔒 Security Notes
 
@@ -78,6 +77,7 @@ When launching for the first time, macOS may show a security warning because the
 ### Gatekeeper Bypass (Alternative Method)
 
 If the above doesn't work:
+
 1. Right-click on the app in Applications
 2. Select **"Open"** from the context menu
 3. Click **"Open"** in the security dialog

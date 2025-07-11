@@ -1,9 +1,8 @@
 # 🇸🇦 ZATCA Invoice Creator
 
-<div align="center">
+## Production-Ready ZATCA Phase 2 Compliant Invoice Generator
 
-**Production-Ready ZATCA Phase 2 Compliant Invoice Generator**
-*Built for Saudi Arabian Businesses*
+Built for Saudi Arabian Businesses
 
 [![CI/CD Pipeline](https://github.com/YOUR_USERNAME/zatca-invoice-creator/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/zatca-invoice-creator/actions)
 [![TypeScript](https://img.shields.io/badge/TypeScript-100%25-blue.svg)](https://www.typescriptlang.org/)
@@ -16,13 +15,11 @@
 [![Code Quality](https://img.shields.io/badge/lint-0%20errors-brightgreen.svg)](package.json)
 [![Security](https://img.shields.io/badge/security-audited-green.svg)](package.json)
 
-**[🚀 Quick Start](#-quick-start) • [📚 Documentation](#-documentation) • [🎯 Features](#-features) • [🛠️ Development](#-development)**
-
-</div>
+Quick Start • Documentation • Features • Development
 
 ---
 
-## 🎯 **Why Choose ZATCA Invoice Creator?**
+## Why Choose ZATCA Invoice Creator?
 
 > **The only invoice solution you need for Saudi Arabian business compliance**
 
@@ -41,8 +38,11 @@
 ```bash
 
 # Download the latest release for your platform
+
 # Windows: .exe installer
+
 # macOS: .dmg installer
+
 # Linux: .AppImage or .deb package
 
 # Or clone and run locally
@@ -52,7 +52,7 @@ cd zatca-invoice-creator
 npm install
 npm run dev
 
-```
+```bash
 
 ### **Option 2: Web Version**
 
@@ -126,8 +126,7 @@ npm run dev
 
 ## 🏗️ **Architecture Overview**
 
-```
-
+```bash
 zatca-invoice-creator/
 ├── 🎨 Frontend (React 19 + TypeScript)
 │   ├── Context-based state management
@@ -146,8 +145,7 @@ zatca-invoice-creator/
     ├── Web application
     └── Progressive Web App
 
-```
-
+```bash
 ---
 
 ## 🚀 **Deployment Options**
@@ -159,7 +157,7 @@ npm run build
 npm run electron:pack    # Package for current OS
 npm run electron:dist    # Create installer
 
-```
+```bash
 
 ### **🌐 Web Application**
 
@@ -168,7 +166,7 @@ npm run build           # Creates optimized build
 
 # Deploy 'dist' folder to any hosting provider
 
-```
+```bash
 
 ### **☁️ Cloud Deployment**
 
@@ -221,7 +219,7 @@ npm run test        # Run tests (when implemented)
 npm run type-check  # TypeScript validation
 npm audit           # Security check
 
-```
+```bash
 
 ### **Contributing**
 
@@ -297,7 +295,7 @@ npm audit           # Security check
 
 This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
 
-**Commercial licensing and support available for enterprise use.**
+### Commercial licensing and support available for enterprise use.
 
 ---
 
@@ -310,12 +308,11 @@ This project is licensed under the [MIT License](LICENSE) - see the LICENSE file
 
 ---
 
-<div align="center">
 
-**⭐ Star this repository if it helps your business achieve ZATCA compliance! ⭐**
+### ⭐ Star this repository if it helps your business achieve ZATCA compliance! ⭐
 
-**Built with ❤️ for the Saudi Arabian business community**
+### Built with ❤️ for the Saudi Arabian business community
 
 [🚀 Get Started](DEPLOY_NOW.md) • [📚 Documentation](DEPLOYMENT_GUIDE.md) • [🛠️ Contribute](CONTRIBUTING.md)
 
-</div>
+

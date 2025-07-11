@@ -44,6 +44,7 @@ This guide will set up your ZATCA-compliant invoice application for immediate bu
 ## 🏗️ **AUTOMATED SETUP PROCESS**
 
 The following files will be created automatically:
+
 1. `.env` - Environment configuration
 2. `database-setup.sql` - Database schema
 3. `zatca-config.json` - ZATCA settings

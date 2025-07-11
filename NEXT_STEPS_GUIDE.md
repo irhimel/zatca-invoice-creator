@@ -18,10 +18,15 @@
 ```bash
 
 # Step 1: Create repository on GitHub
+
 # Go to https://github.com/new
+
 # Repository name: zatca-invoice-creator
+
 # Description: Production-ready ZATCA Phase 2 compliant invoice creator
+
 # Make it Public or Private (your choice)
+
 # Don't initialize with README (we already have one)
 
 # Step 2: Connect local repository to GitHub
@@ -31,11 +36,14 @@ git branch -M main
 git push -u origin main --tags
 
 # Step 3: Verify CI/CD pipeline
+
 # GitHub Actions will automatically run and should show
+
 # ✅ Lint check passed
+
 # ✅ Build process passed
 
-```
+```bash
 
 ### **2️⃣ Development Environment** (2 minutes)
 
@@ -49,7 +57,7 @@ npm run lint         # Should show 0 errors
 npm run build        # Should complete successfully
 npm run preview      # Preview production build
 
-```
+```bash
 
 ### **3️⃣ Production Deployment Options**
 
@@ -64,11 +72,14 @@ npm run electron:pack            # Package for current platform
 npm run electron:dist            # Create distributable files
 
 # Outputs will be in dist/ folder
+
 # - Windows: .exe installer
+
 # - macOS: .dmg installer
+
 # - Linux: .AppImage or .deb
 
-```
+```bash
 
 #### **Option B: Web Application**
 
@@ -79,12 +90,16 @@ npm run electron:dist            # Create distributable files
 npm run build                    # Build optimized web version
 
 # Upload 'dist' folder to
+
 # - Netlify, Vercel, GitHub Pages
+
 # - AWS S3 + CloudFront
+
 # - Azure Static Web Apps
+
 # - Any web hosting provider
 
-```
+```bash
 
 #### **Option C: Azure Deployment** (Recommended for Enterprise)
 
@@ -96,8 +111,7 @@ npm install -g @azure/static-web-apps-cli
 swa init                         # Initialize Azure SWA
 swa deploy                       # Deploy to Azure
 
-```
-
+```bash
 ---
 
 ## 🧪 **QUALITY ASSURANCE TESTING**
@@ -151,11 +165,12 @@ npm run build                    # TypeScript compilation
 npm run type-check               # Type safety validation
 
 # Future: Add unit tests
+
 # npm run test
+
 # npm run test:e2e
 
-```
-
+```bash
 ---
 
 ## 📊 **MONITORING & ANALYTICS**
@@ -191,15 +206,15 @@ Consider adding:
 
 ### **ZATCA Configuration**
 
-1. **Certificates**: Add your ZATCA certificates to `public/certificates/`
-2. **Environment**: Set ZATCA environment (sandbox/production) in `.env`
-3. **Company Info**: Update default company details in context
+5. **Certificates**: Add your ZATCA certificates to `public/certificates/`
+6. **Environment**: Set ZATCA environment (sandbox/production) in `.env`
+7. **Company Info**: Update default company details in context
 
 ### **Database Configuration**
 
-1. **Azure SQL**: Configure connection in `.env`
-2. **Offline Storage**: SQLite configuration in `src/services/database.ts`
-3. **Backup Settings**: Configure automatic backups
+8. **Azure SQL**: Configure connection in `.env`
+9. **Offline Storage**: SQLite configuration in `src/services/database.ts`
+10. **Backup Settings**: Configure automatic backups
 
 ---
 
@@ -227,19 +242,19 @@ Consider adding:
 
 ### **Phase 2: Business Extensions** (2-4 weeks)
 
-1. **Payment Integration**
+4. **Payment Integration**
 
    - Stripe payment links
    - MADA payment gateway
    - Payment tracking
 
-2. **Advanced ZATCA Features**
+5. **Advanced ZATCA Features**
 
    - Phase 2 compliance
    - Advanced QR codes
    - XML validation
 
-3. **Reporting Dashboard**
+6. **Reporting Dashboard**
 
    - Sales analytics
    - Tax reports
@@ -247,19 +262,19 @@ Consider adding:
 
 ### **Phase 3: Enterprise Features** (1-3 months)
 
-1. **Multi-tenant Support**
+7. **Multi-tenant Support**
 
    - Multiple business entities
    - User management
    - Role-based access
 
-2. **API Integration**
+8. **API Integration**
 
    - External accounting systems
    - ERP connectivity
    - Third-party services
 
-3. **Mobile Applications**
+9. **Mobile Applications**
 
    - React Native iOS/Android
    - Mobile-optimized UI
@@ -340,10 +355,13 @@ Consider adding:
 
 Your ZATCA Invoice Creator is now **production-ready** with enterprise-grade quality:
 
-**✅ Ready for immediate deployment**
-**✅ Scalable architecture for future growth**
-**✅ Comprehensive documentation for team collaboration**
-**✅ Automated quality assurance**
+### ✅ Ready for immediate deployment
+
+### ✅ Scalable architecture for future growth
+
+### ✅ Comprehensive documentation for team collaboration
+
+### ✅ Automated quality assurance
 
 **Next Action**: Choose your deployment option and go live! 🚀
 

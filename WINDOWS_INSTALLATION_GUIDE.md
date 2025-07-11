@@ -31,9 +31,9 @@ Your ZATCA Invoice Creator application has been successfully built as a Windows 
 
 #### Step 3: First Launch
 
-1. **Desktop shortcut** will be created automatically
-2. Or find it in **Start Menu** → **"ZATCA Invoice Creator"**
-3. The application will start immediately
+5. **Desktop shortcut** will be created automatically
+6. Or find it in **Start Menu** → **"ZATCA Invoice Creator"**
+7. The application will start immediately
 
 ### SYSTEM REQUIREMENTS
 
@@ -157,7 +157,7 @@ Your Windows installer is production-ready and includes:
 - ✅ **Enterprise features** - Client management, quotes, exports
 - ✅ **Data security** - Encrypted storage and transmission
 
-**🚀 Deploy with confidence - your Saudi Arabian business is ready for ZATCA compliance!**
+### Deploy with confidence - your Saudi Arabian business is ready for ZATCA compliance
 
 ---
 

@@ -84,7 +84,7 @@ AZURE_SQL_DATABASE=invoicedb
 AZURE_SQL_USERNAME=your_username
 AZURE_SQL_PASSWORD=your_password
 
-```
+```bash
 
 ### **2. Initialize Database Service**
 
@@ -94,7 +94,7 @@ import { dbService } from '../services/database';
 // Initialize once in your app
 await dbService.initialize();
 
-```
+```bash
 
 ### **3. Create ZATCA Invoice**
 
@@ -102,7 +102,7 @@ await dbService.initialize();
 // Works online or offline automatically
 const invoiceId = await dbService.createInvoice(zatcaInvoice);
 
-```
+```bash
 
 ### **4. Sync Offline Data**
 
@@ -110,7 +110,7 @@ const invoiceId = await dbService.createInvoice(zatcaInvoice);
 // Manual sync when needed
 const syncResult = await dbService.syncOfflineDataToAzure();
 
-```
+```bash
 
 ## 📊 **Database Schema**
 
@@ -137,7 +137,7 @@ CREATE TABLE audit_logs (
     details NVARCHAR(MAX)
 );
 
-```
+```bash
 
 ## 🔗 **Integration Points**
 
@@ -227,7 +227,8 @@ The system is ready for production use with your Azure SQL Database hosted on `r
 
 ---
 
-**Next Steps:**
+### Next Steps:
+
 1. Update your `.env` file with actual Azure SQL credentials
 2. Test the connection using the database status panel
 3. Generate some invoices to test the offline sync

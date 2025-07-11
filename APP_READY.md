@@ -54,7 +54,7 @@ npm run dev
 
 # Access at: http://localhost:5177/
 
-```
+```bash
 
 ### 2. **Production Build:**
 
@@ -63,7 +63,7 @@ npm run build
 
 # Serves optimized static files from dist/
 
-```
+```bash
 
 ### 3. **Electron Desktop App:**
 
@@ -72,7 +72,7 @@ npm run electron
 
 # Launches cross-platform desktop application
 
-```
+```bash
 
 ## 🔧 **Configuration Needed:**
 
@@ -84,7 +84,7 @@ Update `.env` file with your actual credentials:
 AZURE_SQL_USERNAME=your_actual_username
 AZURE_SQL_PASSWORD=your_actual_password
 
-```
+```bash
 
 ### 🔐 **ZATCA Configuration:**
 
@@ -94,8 +94,7 @@ AZURE_SQL_PASSWORD=your_actual_password
 
 ## 📁 **Project Structure:**
 
-```
-
+```bash
 src/
 ├── panels/
 │   ├── CreateInvoicePanel.tsx     ✅ Optimized with lazy loading
@@ -111,19 +110,18 @@ src/
 │   └── Invoice/                   ✅ Lazy-loaded components
 └── types/                         ✅ TypeScript definitions
 
-```
+```bash
 
 ## 📊 **Build Output (Optimized):**
 
-```
-
+```bash
 Main bundle:           423.44 kB (123.78 kB gzipped) ⚡
 CreateInvoicePanel:  1,166.49 kB (411.87 kB gzipped) 📱
 CustomerForm:            5.32 kB (1.23 kB gzipped) 👤
 InvoiceItems:            9.36 kB (1.77 kB gzipped) 📝
 InvoiceActions:          6.97 kB (1.57 kB gzipped) 🎯
 
-```
+```bash
 
 ## ✅ **Ready-to-Use Features:**
 
@@ -136,31 +134,31 @@ InvoiceActions:          6.97 kB (1.57 kB gzipped) 🎯
 
 ### 🔍 **ZATCA Validation:**
 
-1. **Invoice Structure Validation**
-2. **QR Code Generation**
-3. **Cryptographic Stamping**
-4. **XML Schema Compliance**
+5. **Invoice Structure Validation**
+6. **QR Code Generation**
+7. **Cryptographic Stamping**
+8. **XML Schema Compliance**
 
 ### 💾 **Data Management:**
 
-1. **Local Storage (Offline)**
-2. **Azure SQL Sync (Online)**
-3. **Draft Saving**
-4. **Auto-sync Queue**
+9. **Local Storage (Offline)**
+10. **Azure SQL Sync (Online)**
+11. **Draft Saving**
+12. **Auto-sync Queue**
 
 ### 📄 **Export Options:**
 
-1. **PDF Generation**
-2. **UBL XML Export**
-3. **QR Code Embedding**
-4. **ZATCA Reporting**
+13. **PDF Generation**
+14. **UBL XML Export**
+15. **QR Code Embedding**
+16. **ZATCA Reporting**
 
 ## 🎯 **Next Steps:**
 
-1. **Set up Azure SQL credentials** in `.env`
-2. **Configure ZATCA business details**
-3. **Test invoice generation workflow**
-4. **Deploy to production environment**
+17. **Set up Azure SQL credentials** in `.env`
+18. **Configure ZATCA business details**
+19. **Test invoice generation workflow**
+20. **Deploy to production environment**
 
 ## 🏆 **Technical Achievements:**
 

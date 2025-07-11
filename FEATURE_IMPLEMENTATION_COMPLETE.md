@@ -129,9 +129,9 @@
 
 ## 📝 **Usage Instructions**
 
-1. **Client Management**: Navigate to "Clients" from sidebar to manage client database
-2. **Invoice Creation**: Use client selector in invoice creation for auto-population
-3. **Data Export**: Access export functionality from Dashboard quick actions
-4. **Quotes Management**: Navigate to "Quotes" from sidebar to manage quotations
+7. **Client Management**: Navigate to "Clients" from sidebar to manage client database
+8. **Invoice Creation**: Use client selector in invoice creation for auto-population
+9. **Data Export**: Access export functionality from Dashboard quick actions
+10. **Quotes Management**: Navigate to "Quotes" from sidebar to manage quotations
 
 The application is now production-ready with comprehensive client management, enhanced invoice creation, data export capabilities, and a complete quotes management system! 🎉

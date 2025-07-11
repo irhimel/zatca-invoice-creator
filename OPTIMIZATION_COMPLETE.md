@@ -13,14 +13,13 @@ Successfully converted CreateInvoicePanel to use React.lazy() and implemented ad
 
 ### New Architecture
 
-```
-
+```bash
 CreateInvoicePanel (1,166.49 kB)
 ├── CustomerForm (5.32 kB) - Lazy loaded
 ├── InvoiceItems (9.36 kB) - Lazy loaded
 └── InvoiceActions (6.97 kB) - Lazy loaded
 
-```
+```bash
 
 ## Technical Implementation
 
@@ -32,7 +31,7 @@ const CustomerForm = lazy(() => import('../components/Invoice/CustomerForm'));
 const InvoiceItems = lazy(() => import('../components/Invoice/InvoiceItems'));
 const InvoiceActions = lazy(() => import('../components/Invoice/InvoiceActions'));
 
-```
+```bash
 
 ### 2. Suspense Boundaries
 
@@ -41,7 +40,7 @@ const InvoiceActions = lazy(() => import('../components/Invoice/InvoiceActions')
     <CustomerForm />
 </Suspense>
 
-```
+```bash
 
 ### 3. Enhanced Vite Chunking
 
@@ -85,14 +84,13 @@ const InvoiceActions = lazy(() => import('../components/Invoice/InvoiceActions')
 
 ## Build Output
 
-```
-
+```bash
 dist/assets/CreateInvoicePanel-DeRxgyE4.js       1,166.49 kB │ gzip: 411.87 kB
 dist/assets/CustomerForm-Daxq69HG.js                 5.32 kB │ gzip:   1.23 kB
 dist/assets/InvoiceItems-CqVvVe1I.js                 9.36 kB │ gzip:   1.77 kB
 dist/assets/InvoiceActions-t-mq5tZt.js               6.97 kB │ gzip:   1.57 kB
 
-```
+```bash
 
 ## Status: ✅ Complete
 

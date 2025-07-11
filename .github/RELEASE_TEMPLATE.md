@@ -43,12 +43,14 @@
 ### **⚡ Quick Start**
 
 ```bash
+
 # Clone and run locally
+
 git clone https://github.com/YOUR_USERNAME/zatca-invoice-creator.git
 cd zatca-invoice-creator
 npm install && npm run dev
-```
 
+```bash
 ---
 
 ## 🎯 **Key Features**
@@ -112,10 +114,10 @@ npm install && npm run dev
 
 ### **2️⃣ Web Application**
 
-1. Visit [zatca-invoice-creator.netlify.app](link)
-2. No installation required - works in any modern browser
-3. For offline use, click "Install" when prompted
-4. Sync with cloud storage for multi-device access
+6. Visit [zatca-invoice-creator.netlify.app](link)
+7. No installation required - works in any modern browser
+8. For offline use, click "Install" when prompted
+9. Sync with cloud storage for multi-device access
 
 ### **3️⃣ Development Setup**
 
@@ -124,8 +126,8 @@ git clone https://github.com/YOUR_USERNAME/zatca-invoice-creator.git
 cd zatca-invoice-creator
 npm install
 npm run dev  # Starts development server at localhost:5173
-```
 
+```bash
 ---
 
 ## 📚 **Documentation**
@@ -149,7 +151,7 @@ npm run dev  # Starts development server at localhost:5173
 - Data encryption for sensitive information
 - Secure API communication with ZATCA services
 
-### **✅ ZATCA Compliance**
+### **✅ ZATCA Compliance** (2)
 
 - Certified Phase 2 simplified tax invoice format
 - QR code generation meeting ZATCA specifications
@@ -222,15 +224,13 @@ Special thanks to:
 
 ---
 
-<div align="center">
 
-**⭐ If this release helps your business, please star the repository! ⭐**
+### ⭐ If this release helps your business, please star the repository! ⭐
 
-**Built with ❤️ for Saudi Arabian businesses**
+### Built with ❤️ for Saudi Arabian businesses
 
 [📥 Download Now](#-download-options) • [📚 Documentation](#-documentation) • [💬 Get Support](#-support--help)
 
-</div>
 
 ---
 

@@ -90,7 +90,7 @@
 git remote add origin https://github.com/YOUR_USERNAME/zatca-invoice-creator.git
 git push -u origin main --tags
 
-```
+```bash
 
 ### **2. Verify CI Pipeline**
 
@@ -109,7 +109,7 @@ npm run dev          # Start development server
 npm run build        # Build for production
 npm run lint         # Validate code quality
 
-```
+```bash
 
 ### **4. Production Deployment**
 
@@ -118,8 +118,7 @@ npm run build        # Build React application
 npm run electron:pack    # Package Electron application
 npm run electron:dist    # Create distribution files
 
-```
-
+```bash
 ---
 
 ## 🧪 **QUALITY VALIDATION**
@@ -131,7 +130,7 @@ npm run lint         # Result: 0 errors, 0 warnings
 npm run build        # Result: Successful compilation
 npm run type-check   # Result: 0 TypeScript errors
 
-```
+```bash
 
 ### **Manual Testing** 📋
 
@@ -157,17 +156,17 @@ Follow the comprehensive procedures in [`QA_TESTING_GUIDE.md`](QA_TESTING_GUIDE.
 
 ### **Advanced Features**
 
-1. **ZATCA Phase 2 Extensions**: Advanced compliance features
-2. **API Integration**: Connect external accounting systems
-3. **Advanced Analytics**: Detailed reporting dashboard
-4. **Multi-tenant**: Support multiple business entities
+5. **ZATCA Phase 2 Extensions**: Advanced compliance features
+6. **API Integration**: Connect external accounting systems
+7. **Advanced Analytics**: Detailed reporting dashboard
+8. **Multi-tenant**: Support multiple business entities
 
 ### **Platform Expansion**
 
-1. **Mobile Apps**: React Native iOS/Android versions
-2. **Web Version**: Deploy as standalone web application
-3. **Cloud Hosting**: Azure/AWS deployment options
-4. **Microservices**: Break into distributed architecture
+9. **Mobile Apps**: React Native iOS/Android versions
+10. **Web Version**: Deploy as standalone web application
+11. **Cloud Hosting**: Azure/AWS deployment options
+12. **Microservices**: Break into distributed architecture
 
 ---
 

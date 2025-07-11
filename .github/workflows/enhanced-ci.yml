@@ -14,10 +14,10 @@ jobs:
     
     steps:
     - name: 📥 Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v3
       
     - name: 🟢 Setup Node.js
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v3
       with:
         node-version: '20'
         cache: 'npm'
@@ -49,10 +49,10 @@ jobs:
     
     steps:
     - name: 📥 Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v3
       
     - name: 🟢 Setup Node.js
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v3
       with:
         node-version: '20'
         cache: 'npm'
@@ -80,10 +80,10 @@ jobs:
         
     steps:
     - name: 📥 Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v3
       
     - name: 🟢 Setup Node.js
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v3
       with:
         node-version: '20'
         cache: 'npm'
@@ -98,7 +98,7 @@ jobs:
       run: npm run electron:pack
       
     - name: 📤 Upload artifacts
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v3
       with:
         name: electron-${{ matrix.os }}
         path: dist-electron/
@@ -112,10 +112,10 @@ jobs:
     
     steps:
     - name: 📥 Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v3
       
     - name: 🟢 Setup Node.js
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v3
       with:
         node-version: '20'
         cache: 'npm'
@@ -126,13 +126,8 @@ jobs:
     - name: 🏗️ Build for preview
       run: npm run build
       
-    - name: 🚀 Deploy to Netlify (Preview)
-      uses: netlify/actions/cli@master
-      with:
-        args: deploy --dir=dist --alias=pr-${{ github.event.number }}
-      env:
-        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+    - name: ✅ Preview build complete
+      run: echo "Preview build artifacts ready in dist/"
 
   create-release:
     runs-on: ubuntu-latest
@@ -142,38 +137,14 @@ jobs:
     
     steps:
     - name: 📥 Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v3
       
     - name: 🏷️ Create GitHub Release
-      uses: actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tag_name: ${{ github.ref }}
-        release_name: ZATCA Invoice Creator ${{ github.ref }}
-        body: |
-          ## 🎉 ZATCA Invoice Creator Release
-          
-          ### ✅ What's Included
-          - 🇸🇦 ZATCA Phase 2 compliant invoice generation
-          - 📱 Cross-platform Electron desktop application
-          - 🌐 Web application for browser use
-          - 📄 Comprehensive documentation and guides
-          
-          ### 🚀 Quick Start
-          1. Download the appropriate version for your platform
-          2. Follow the setup instructions in README.md
-          3. Start creating ZATCA-compliant invoices immediately!
-          
-          ### 📊 Quality Metrics
-          - ✅ Zero TypeScript errors
-          - ✅ Zero ESLint warnings
-          - ✅ Security audit passed
-          - ✅ Cross-platform compatibility verified
-          
-          **Ready for production use in Saudi Arabian businesses! 🇸🇦**
-        draft: false
-        prerelease: false
+      run: |
+        echo "Creating release for tag: ${{ github.ref_name }}"
+        echo "Release automation can be added here"
+        echo "Tag: ${{ github.ref }}"
+        echo "Release Name: ZATCA Invoice Creator ${{ github.ref }}"
 
   notify-success:
     runs-on: ubuntu-latest

@@ -6,12 +6,14 @@
 
    ```bash
    npm run dev
+
    # or
+
    npm run electron-dev
 
    ```
 
-2. **Verify Clean State**
+1. **Verify Clean State**
 
    - ✅ No lint errors: `npm run lint`
    - ✅ Successful build: `npm run build`
@@ -23,7 +25,7 @@
 
 ### 1. Invoice Creation & Management
 
-**Standard Invoice Creation:**
+### Standard Invoice Creation
 
 - [ ] Create new invoice with customer details
 - [ ] Add multiple invoice items (description, quantity, unit price)
@@ -33,7 +35,7 @@
 - [ ] Delete invoice
 - [ ] Duplicate invoice
 
-**ZATCA E-Invoice Generation:**
+### ZATCA E-Invoice Generation
 
 - [ ] Generate simplified ZATCA invoice
 - [ ] Verify supplier data from app settings
@@ -42,7 +44,7 @@
 - [ ] Test PDF export with QR code
 - [ ] Verify invoice numbering sequence
 
-**Edge Cases:**
+### Edge Cases
 
 - [ ] Invoice with zero items
 - [ ] Very large quantities/amounts
@@ -52,7 +54,7 @@
 
 ### 2. Client Management
 
-**CRUD Operations:**
+### CRUD Operations
 
 - [ ] Create new client
 - [ ] Edit client information
@@ -60,7 +62,7 @@
 - [ ] Search/filter clients
 - [ ] Import client from previous invoice
 
-**Client Integration:**
+### Client Integration
 
 - [ ] Select client for invoice
 - [ ] Auto-populate customer details
@@ -69,14 +71,14 @@
 
 ### 📊 3. Offline/Online Sync
 
-**Offline Functionality:**
+### Offline Functionality
 
 - [ ] Create invoices while offline
 - [ ] Queue invoices for ZATCA reporting
 - [ ] Local database persistence
 - [ ] Data export/backup
 
-**Online Sync:**
+### Online Sync
 
 - [ ] ZATCA invoice reporting
 - [ ] Azure SQL sync (if configured)
@@ -86,7 +88,7 @@
 
 ### 🌐 4. Language & Settings
 
-**Localization:**
+### Localization
 
 - [ ] Switch between English/Arabic
 - [ ] RTL layout in Arabic mode
@@ -94,7 +96,7 @@
 - [ ] Number formatting
 - [ ] Currency display
 
-**App Settings:**
+### App Settings
 
 - [ ] Company information setup
 - [ ] VAT number configuration
@@ -104,7 +106,7 @@
 
 ### 📱 5. Export & PDF Generation
 
-**PDF Export:**
+### PDF Export
 
 - [ ] Standard invoice PDF
 - [ ] ZATCA compliant PDF with QR
@@ -112,7 +114,7 @@
 - [ ] PDF preview before export
 - [ ] Email integration (if available)
 
-**Data Export:**
+### Data Export
 
 - [ ] Export invoices to Excel/CSV
 - [ ] Export client list
@@ -244,40 +246,43 @@
 
 ## 🚨 Bug Reporting Template
 
-When you find issues, report them with:
+When you find issues, report them with
 
 ```markdown
 **Bug Title:** [Brief description]
 
-**Environment:**
+### Environment
 
 - OS: [macOS/Windows/Browser]
 - Version: [App version]
 - Browser: [If web version]
 
-**Steps to Reproduce:**
+### Steps to Reproduce
+
 1.
 2.
 3.
 
-**Expected Result:**
+### Expected Result
+
 [What should happen]
 
-**Actual Result:**
+### Actual Result
+
 [What actually happened]
 
-**Screenshots/Logs:**
+### Screenshots/Logs
+
 [If applicable]
 
 **Priority:** [Critical/High/Medium/Low]
 
-```
-
+```bash
 ---
 
 ## ✅ Testing Sign-off
 
-Once you've completed this QA testing:
+Once you've completed this QA testing
 
 - [ ] **Functional Testing Complete**
 - [ ] **Performance Testing Complete**

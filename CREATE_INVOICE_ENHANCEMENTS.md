@@ -56,7 +56,7 @@ const [validationErrors, setValidationErrors] = useState<ValidationError[]>([]);
 const [autoSaveStatus, setAutoSaveStatus] = useState<'idle' | 'saving' | 'saved' | 'error'>('idle');
 const [lastSaved, setLastSaved] = useState<Date | null>(null);
 
-```
+```bash
 
 ### **Advanced Validation**
 
@@ -67,7 +67,7 @@ const validateForm = useCallback((): ValidationError[] => {
     // Bilingual error messages (Arabic/English)
 }, [customerInfo, items, invoiceDetails, isArabic]);
 
-```
+```bash
 
 ### **Auto-Save Implementation**
 
@@ -78,7 +78,7 @@ const autoSaveDraft = useCallback(async () => {
     // Timestamp tracking for recovery
 }, [customerInfo, items, invoiceDetails, selectedClient]);
 
-```
+```bash
 
 ### **Template Management**
 
@@ -89,7 +89,7 @@ const saveAsTemplate = useCallback(async (templateName: string) => {
     // Template metadata tracking
 }, [items, invoiceDetails.notes, templates]);
 
-```
+```bash
 
 ## 🎯 **Key Benefits**
 
@@ -115,40 +115,40 @@ const saveAsTemplate = useCallback(async (templateName: string) => {
 
 ```tsx
 // Auto-save status with visual indicators
-<div className="flex items-center gap-2">
+
     <ClockIcon className="w-4 h-4" />
     <span className={statusColorClass}>
         {autoSaveStatus === 'saved' ? 'Auto-saved' : 'Saving...'}
     </span>
-</div>
 
-```
+
+```bash
 
 ### **Validation Alerts**
 
 ```tsx
 // Beautiful error and warning cards
 {hasErrors && (
-    <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4">
+
         <AlertTriangleIcon className="w-5 h-5" />
         <span>Form Errors</span>
         <ul>{errorMessages}</ul>
-    </div>
+
 )}
 
-```
+```bash
 
 ### **Template System**
 
 ```tsx
 // Template management interface
-<div className="bg-gray-800 rounded-lg p-6">
+
     <BookTemplateIcon className="w-5 h-5 text-blue-400" />
     <button onClick={saveAsTemplate}>Save as Template</button>
     <button onClick={showTemplateModal}>Use Template</button>
-</div>
 
-```
+
+```bash
 
 ## 🔄 **Workflow Improvements**
 
@@ -162,13 +162,13 @@ const saveAsTemplate = useCallback(async (templateName: string) => {
 
 ### **After Enhancement**
 
-1. ✅ Auto-save every 30 seconds
-2. ✅ Real-time validation with detailed feedback
-3. ✅ Complete template system for reusability
-4. ✅ Comprehensive status dashboard
-5. ✅ Draft recovery system
-6. ✅ Performance optimizations
-7. ✅ Enhanced user experience
+6. ✅ Auto-save every 30 seconds
+7. ✅ Real-time validation with detailed feedback
+8. ✅ Complete template system for reusability
+9. ✅ Comprehensive status dashboard
+10. ✅ Draft recovery system
+11. ✅ Performance optimizations
+12. ✅ Enhanced user experience
 
 ## 🚀 **Ready to Use**
 

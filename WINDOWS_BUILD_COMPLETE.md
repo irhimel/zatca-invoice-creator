@@ -30,7 +30,7 @@ Your ZATCA Invoice Creator application has been successfully compiled into a Win
   ]
 }
 
-```
+```bash
 
 ### 🚀 **DEPLOYMENT READY**
 
@@ -93,8 +93,7 @@ The installer includes everything needed:
 
 ### 📊 **BUILD STATISTICS**
 
-```
-
+```bash
 Build Time: ~15 seconds
 Bundle Size: 89 MB (compressed installer)
 Chunk Optimization: ✅ Lazy loading implemented
@@ -102,7 +101,7 @@ Code Splitting: ✅ Component-level splitting
 Asset Optimization: ✅ Images and fonts optimized
 Tree Shaking: ✅ Unused code removed
 
-```
+```bash
 
 ### 🌐 **CROSS-PLATFORM BUILD CAPABILITY**
 
@@ -112,7 +111,7 @@ Your configuration now supports:
 - ✅ **macOS** (.dmg installer) - Ready to build
 - ✅ **Linux** (AppImage) - Ready to build
 
-**Commands available:**
+### Commands available:
 
 - `npm run dist:win` - Windows installer
 - `npm run dist:mac` - macOS installer
@@ -172,7 +171,7 @@ Your ZATCA Invoice Creator is now available as a professional Windows installer,
 
 **📦 Main Installer:** `ZATCA Invoice Creator-1.0.0-Setup.exe` (89 MB)
 
-**🚀 Ready to deploy to all Windows computers in your business!**
+### 🚀 Ready to deploy to all Windows computers in your business!
 
 ---
 

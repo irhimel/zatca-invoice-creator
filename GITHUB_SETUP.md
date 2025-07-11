@@ -25,22 +25,21 @@ git remote add origin git@github.com:YOUR_USERNAME/zatca-invoice-creator.git
 
 git remote add origin https://github.com/YOUR_USERNAME/zatca-invoice-creator.git
 
-```
+```bash
 
 ### Step 3: Push to GitHub
 
 ```bash
 git push -u origin main --tags
 
-```
+```bash
 
 ### Step 4: Verify Setup
 
 ```bash
 git remote -v
 
-```
-
+```bash
 You should see your origin remote listed.
 
 ---
@@ -52,8 +51,7 @@ Our `setup-github.sh` script can handle steps 2-3 automatically:
 ```bash
 ./setup-github.sh
 
-```
-
+```bash
 Just follow the prompts for your username and repository name.
 
 ---

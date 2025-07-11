@@ -5,6 +5,7 @@
 This is a cross-platform desktop application built with Electron, React, TypeScript, and Tailwind CSS for creating and managing invoices.
 
 ## Tech Stack
+
 - **Desktop Framework**: Electron for cross-platform desktop app
 - **Frontend**: React 19 with TypeScript
 - **Styling**: Tailwind CSS
@@ -15,6 +16,7 @@ This is a cross-platform desktop application built with Electron, React, TypeScr
 - **Unique IDs**: uuid
 
 ## Project Structure
+
 - `public/electron.js` - Main Electron process
 - `public/preload.js` - Secure IPC bridge
 - `src/types/` - TypeScript type definitions
@@ -22,6 +24,7 @@ This is a cross-platform desktop application built with Electron, React, TypeScr
 - `src/components/` - React components
 
 ## Key Features
+
 - Create and edit invoices with itemized billing
 - Client management
 - Tax calculations
@@ -30,6 +33,7 @@ This is a cross-platform desktop application built with Electron, React, TypeScr
 - Cross-platform (Windows & Mac) compatibility
 
 ## Development Notes
+
 - Use TypeScript for all new code
 - Follow React functional component patterns
 - Use Tailwind CSS for styling
@@ -38,6 +42,7 @@ This is a cross-platform desktop application built with Electron, React, TypeScr
 - Maintain secure Electron practices (no nodeIntegration, use preload scripts)
 
 ## Code Style
+
 - Use ES modules (type: "module" in package.json)
 - Prefer const assertions and proper typing
 - Use semantic HTML and accessible design patterns

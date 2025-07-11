@@ -72,7 +72,7 @@ Your ZATCA Phase 2-compliant invoice application is now **100% ready for busines
 
 ./dev-start.sh
 
-```
+```bash
 
 ### **For Business Deployment:**
 
@@ -85,16 +85,18 @@ cp .env.example .env
 # Edit .env with your company information
 
 # 2. Set up database (Azure SQL recommended)
+
 # Run database-setup.sql on your SQL server
 
 # 3. Configure ZATCA credentials
+
 # Edit zatca-config.json with your ZATCA API credentials
 
 # 4. Build for production
 
 ./build-production.sh
 
-```
+```bash
 
 ## 📋 **VERIFICATION CHECKLIST**
 
@@ -103,8 +105,7 @@ Run this command to verify everything is working:
 ```bash
 ./health-check.sh
 
-```
-
+```bash
 Expected output:
 
 - ✅ Node.js: Installed and compatible
@@ -154,26 +155,26 @@ Your application includes:
 
 ### **Create Your First Invoice**
 
-1. Start the app: `./dev-start.sh`
-2. Navigate to "Create Invoice"
-3. Select or add a client
-4. Add invoice items
-5. Generate ZATCA-compliant invoice
-6. Export as PDF or submit to ZATCA
+6. Start the app: `./dev-start.sh`
+7. Navigate to "Create Invoice"
+8. Select or add a client
+9. Add invoice items
+10. Generate ZATCA-compliant invoice
+11. Export as PDF or submit to ZATCA
 
 ### **Manage Clients**
 
-1. Go to "Clients" panel
-2. Add new clients with full details
-3. Search and filter existing clients
-4. Export client data as needed
+12. Go to "Clients" panel
+13. Add new clients with full details
+14. Search and filter existing clients
+15. Export client data as needed
 
 ### **Create Templates**
 
-1. Create an invoice with common items
-2. Save as template
-3. Reuse template for future invoices
-4. Modify as needed for each client
+16. Create an invoice with common items
+17. Save as template
+18. Reuse template for future invoices
+19. Modify as needed for each client
 
 ## 🎯 **PRODUCTION DEPLOYMENT**
 
@@ -218,7 +219,7 @@ Your ZATCA-compliant invoice application is now fully set up and ready for busin
 - ✅ Work offline and sync when online
 - ✅ Maintain complete audit trails
 
-**🚀 Start using your new invoice system today with `./dev-start.sh`!**
+### 🚀 Start using your new invoice system today with `./dev-start.sh`!
 
 ---
 

@@ -2,7 +2,7 @@
 
 ## 📦 **MACOS INSTALLER READY**
 
-Your ZATCA Invoice Creator application has been successfully built as macOS installers for both Intel and Apple Silicon Macs!
+Your ZATCA Invoice Creator application has been successfully built as macOS installers for both Intel and Apple Silicon Macs
 
 ### 🎯 **INSTALLER DETAILS**
 
@@ -94,6 +94,7 @@ Both installers contain everything needed to run the application:
 ### 🔄 **UPDATING THE APPLICATION**
 
 Future updates can be installed by:
+
 1. **Download new DMG** - Replace existing app in Applications
 2. **Drag over existing app** - macOS will ask to replace
 3. **Auto-update feature** - When implemented in future versions
@@ -101,6 +102,7 @@ Future updates can be installed by:
 ### 🗑️ **UNINSTALLING**
 
 To remove the application:
+
 1. **Open Applications folder** in Finder
 2. **Drag "ZATCA Invoice Creator"** to Trash
 3. **Empty Trash** to complete removal
@@ -154,6 +156,7 @@ The application will use macOS system proxy settings automatically.
 ### 🔍 **VERIFICATION**
 
 To verify successful installation:
+
 1. **Check Applications folder** - App should be visible
 2. **Launch app** - Should open without errors
 3. **Check About menu** - Shows version 1.0.0
@@ -162,6 +165,7 @@ To verify successful installation:
 ### 📞 **SUPPORT**
 
 For installation support:
+
 1. **Check this guide** - Most issues are covered here
 2. **Run health check** - Use built-in diagnostic tools in the app
 3. **Check Console app** - View system logs for errors
@@ -180,7 +184,7 @@ Your macOS installers are production-ready and include:
 - ✅ **Enterprise features** - Client management, quotes, exports
 - ✅ **Data security** - Encrypted storage and transmission
 
-**🚀 Deploy with confidence - your Saudi Arabian business is ready for ZATCA compliance on Mac!**
+### 🚀 Deploy with confidence - your Saudi Arabian business is ready for ZATCA compliance on Mac
 
 ---
 

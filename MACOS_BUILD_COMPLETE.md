@@ -2,7 +2,7 @@
 
 ## ✅ Build Summary
 
-**Successfully created macOS desktop application installers for the ZATCA Phase 2-compliant invoice generation app.**
+### Successfully created macOS desktop application installers for the ZATCA Phase 2-compliant invoice generation app
 
 ### 📦 Generated Files
 
@@ -63,28 +63,31 @@
 
 #### For End Users
 
-**Intel Macs:**
-1. Download `ZATCA Invoice Creator-1.0.0-x64.dmg`
-2. Double-click to open the disk image
-3. Drag the app to Applications folder
-4. Launch from Applications
+### Intel Macs
 
-**Apple Silicon Macs (M1/M2):**
-1. Download `ZATCA Invoice Creator-1.0.0-arm64.dmg`
-2. Double-click to open the disk image
-3. Drag the app to Applications folder
-4. Launch from Applications
+8. Download `ZATCA Invoice Creator-1.0.0-x64.dmg`
+9. Double-click to open the disk image
+10. Drag the app to Applications folder
+11. Launch from Applications
+
+### Apple Silicon Macs (M1/M2)
+
+12. Download `ZATCA Invoice Creator-1.0.0-arm64.dmg`
+13. Double-click to open the disk image
+14. Drag the app to Applications folder
+15. Launch from Applications
 
 #### Security Note
 
-Since the app is unsigned, users may need to:
+Since the app is unsigned, users may need to
+
 1. Right-click the app and select "Open"
 2. Or go to System Preferences > Security & Privacy > General
 3. Click "Open Anyway" when prompted
 
 ### 🎯 Distribution Ready
 
-The app is now ready for:
+The app is now ready for
 
 - ✅ Internal company distribution
 - ✅ Beta testing with clients

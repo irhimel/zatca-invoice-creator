@@ -11,13 +11,14 @@ This project has been fully refactored, tested, and is ready for deployment with
 ```bash
 
 # Create a new repository on GitHub (via web interface)
+
 # Then connect this local repository
 
 git remote add origin https://github.com/YOUR_USERNAME/zatca-invoice-creator.git
 git branch -M main
 git push -u origin main --tags
 
-```
+```bash
 
 ### 2. Verify CI/CD Pipeline
 
@@ -44,7 +45,7 @@ npm run build      # Build for production
 npm run lint       # Run linter
 npm run preview    # Preview production build
 
-```
+```bash
 
 ## Production Deployment
 
@@ -55,7 +56,7 @@ npm run build              # Build React app
 npm run electron:pack      # Package Electron app
 npm run electron:dist      # Create distributables
 
-```
+```bash
 
 ### Web Version (Optional)
 
@@ -66,7 +67,7 @@ npm run build
 
 # Deploy 'dist' folder to your hosting provider
 
-```
+```bash
 
 ## 🔧 Environment Configuration
 
@@ -89,7 +90,7 @@ ZATCA_ENVIRONMENT=sandbox  # or 'production'
 ZATCA_CERTIFICATE_PATH=path/to/your/certificate.p12
 ZATCA_CERTIFICATE_PASSWORD=your-cert-password
 
-```
+```bash
 
 ## 📋 Quality Assurance
 
@@ -100,11 +101,14 @@ Follow the comprehensive guide in `QA_TESTING_GUIDE.md`:
 ```bash
 
 # Run through all test scenarios
+
 # Test invoice creation, client management, PDF export
+
 # Verify ZATCA compliance features
+
 # Test offline/online synchronization
 
-```
+```bash
 
 ### Automated Testing
 
@@ -114,7 +118,7 @@ npm run test:e2e          # Run E2E tests (when implemented)
 npm run lint              # Code quality checks
 npm run type-check        # TypeScript validation
 
-```
+```bash
 
 ## 🏷️ Version Management
 
@@ -142,7 +146,7 @@ git push origin main --tags
 git tag v1.0.1
 git push origin main --tags
 
-```
+```bash
 
 ## 🛠️ Next Steps
 
@@ -155,18 +159,18 @@ git push origin main --tags
 
 ### Future Enhancements
 
-1. **ZATCA Phase 2**: Implement advanced ZATCA requirements
-2. **Multi-language**: Expand language support
-3. **Advanced Reporting**: Add detailed analytics dashboard
-4. **API Integration**: Connect with external accounting systems
+5. **ZATCA Phase 2**: Implement advanced ZATCA requirements
+6. **Multi-language**: Expand language support
+7. **Advanced Reporting**: Add detailed analytics dashboard
+8. **API Integration**: Connect with external accounting systems
 
 ## 🆘 Support
 
 ### Common Issues
 
-1. **Build Errors**: Run `npm run lint` and fix any remaining issues
-2. **Type Errors**: Check TypeScript configuration in `tsconfig.json`
-3. **Electron Issues**: Verify Node.js version compatibility
+9. **Build Errors**: Run `npm run lint` and fix any remaining issues
+10. **Type Errors**: Check TypeScript configuration in `tsconfig.json`
+11. **Electron Issues**: Verify Node.js version compatibility
 
 ### Development Team
 

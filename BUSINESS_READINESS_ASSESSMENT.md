@@ -65,17 +65,17 @@ ZATCA_API_BASE_URL=https://gw-fatoora.zatca.gov.sa/e-invoicing/core
 ENCRYPTION_KEY=your-32-character-encryption-key
 JWT_SECRET=your-jwt-secret-key
 
-```
+```bash
 
 ### 2. **Database Setup** 💾
 
-**Option A: Azure SQL (Recommended for business)**
+### Option A: Azure SQL (Recommended for business)
 
 - Create Azure SQL Database
 - Run database schema setup scripts
 - Configure connection strings
 
-**Option B: Local Only (Single device)**
+### Option B: Local Only (Single device)
 
 - App works with IndexedDB only
 - No multi-device synchronization
@@ -100,10 +100,10 @@ npm run build
 npm run dist
 
 # Install on business computers
+
 # Distribute the installer from /release folder
 
-```
-
+```bash
 ---
 
 ## 💼 **BUSINESS CAPABILITIES**
@@ -182,17 +182,17 @@ npm run dist
 
 ### **Phase 2: Production Setup (2-3 days)**
 
-1. Set up Azure SQL database
-2. Configure production ZATCA credentials
-3. Deploy application to business computers
-4. Train staff on application usage
+5. Set up Azure SQL database
+6. Configure production ZATCA credentials
+7. Deploy application to business computers
+8. Train staff on application usage
 
 ### **Phase 3: Go Live (1 day)**
 
-1. Import existing client data
-2. Create invoice templates
-3. Generate first live invoices
-4. Verify ZATCA submission
+9. Import existing client data
+10. Create invoice templates
+11. Generate first live invoices
+12. Verify ZATCA submission
 
 ---
 
@@ -216,8 +216,9 @@ Your invoice application is **enterprise-ready** and can be deployed for busines
 4. **Train your team**
 5. **Start issuing compliant invoices**
 
-**Estimated Setup Time: 3-5 business days**
-**Estimated Cost: $10-100/month (Azure + ZATCA)**
+### Estimated Setup Time: 3-5 business days
+
+### Estimated Cost: $10-100/month (Azure + ZATCA)
 
 ---
 
@@ -241,11 +242,11 @@ For ongoing maintenance:
 
 ## 🎉 **CONCLUSION**
 
-**Your ZATCA-compliant invoice application is production-ready and suitable for immediate business deployment.**
+### Your ZATCA-compliant invoice application is production-ready and suitable for immediate business deployment.
 
 The application provides enterprise-grade features, full regulatory compliance, and professional user experience. With proper environment setup, it's ready to handle your business invoicing needs from day one.
 
-**Business Impact:**
+### Business Impact:
 
 - ✅ **Legal Compliance**: Meet ZATCA requirements
 - ✅ **Professional Image**: High-quality invoices and quotes
@@ -253,4 +254,4 @@ The application provides enterprise-grade features, full regulatory compliance, 
 - ✅ **Business Growth**: Scalable solution for growing business
 - ✅ **Cost Effective**: One-time setup with low ongoing costs
 
-**Ready to deploy? Let's get your business invoicing system live! 🚀**
+### Ready to deploy? Let's get your business invoicing system live! 🚀

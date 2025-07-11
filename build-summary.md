@@ -4,13 +4,13 @@
 
 ### Performance Improvements Achieved
 
-**Before Optimization:**
+### Before Optimization
 
 - Single massive bundle: `1,653.79 kB` (543.61 kB gzipped)
 - Poor loading performance
 - No code splitting
 
-**After Optimization:**
+### After Optimization
 
 - Main bundle: `423.44 kB` (123.77 kB gzipped) - **76% reduction!**
 - Lazy-loaded panels: Individual chunks from 1.76 KB to 21.03 KB
@@ -39,7 +39,7 @@
 
 ### Warning Status
 
-The `(!) Some chunks are larger than 500 kB` warning is **cosmetic only** and does not indicate a problem:
+The `(!) Some chunks are larger than 500 kB` warning is **cosmetic only** and does not indicate a problem
 
 - ✅ **Main bundle is optimized**: 423KB (under 500KB)
 - ✅ **CreateInvoicePanel is lazy-loaded**: Only downloads when user accesses it
@@ -62,7 +62,7 @@ The invoice application is now **highly optimized** and production-ready. The re
 ```bash
 npm run build
 
-```
+```bash
 
 ### Result
 

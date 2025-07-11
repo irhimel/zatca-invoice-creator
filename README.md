@@ -73,7 +73,7 @@ setup.bat           # Windows
 ./dev-start.sh      # macOS/Linux
 dev-start.bat       # Windows
 
-```
+```bash
 
 ### **Option 2: Manual Setup**
 
@@ -94,7 +94,7 @@ cp .env.example .env
 npm run dev         # Web dev server
 npm run electron-dev # Electron app
 
-```
+```bash
 
 ### **Option 3: Production Build**
 
@@ -109,7 +109,7 @@ build-production.bat   # Windows
 
 npm run dist
 
-```
+```bash
 
 ## � **SETUP CHECKLIST**
 
@@ -193,8 +193,7 @@ npm run dist
 
 ## 📁 **PROJECT STRUCTURE**
 
-```
-
+```bash
 ZATCA Invoice Creator/
 ├── 📄 Configuration Files
 │   ├── .env.example          # Environment template
@@ -231,7 +230,7 @@ ZATCA Invoice Creator/
     ├── dist/                # Web build output
     └── release/             # Electron distributables
 
-```
+```bash
 
 ## 🔐 **SECURITY & COMPLIANCE**
 
@@ -257,7 +256,7 @@ ZATCA Invoice Creator/
 
 ### **Common Issues**
 
-**Build Fails**
+### Build Fails
 
 ```bash
 
@@ -267,9 +266,9 @@ rm -rf node_modules package-lock.json
 npm install
 npm run build
 
-```
+```bash
 
-**Electron Won't Start**
+### Electron Won't Start
 
 ```bash
 
@@ -281,9 +280,9 @@ npm run build
 
 ls -la public/electron.js public/preload.js
 
-```
+```bash
 
-**Database Connection Issues**
+### Database Connection Issues
 
 ```bash
 
@@ -295,9 +294,9 @@ cat .env | grep -E "(AZURE_SQL|DB_)"
 
 npm run test-db
 
-```
+```bash
 
-**ZATCA Integration Problems**
+### ZATCA Integration Problems
 
 ```bash
 
@@ -309,7 +308,7 @@ cat zatca-config.json
 
 npm run test-zatca
 
-```
+```bash
 
 ## 🌟 **BUSINESS BENEFITS**
 
@@ -326,7 +325,7 @@ This is a business-ready application designed for Saudi Arabian companies requir
 
 ---
 
-**🚀 Ready to start? Run `./setup.sh` and have your first invoice generated in under 5 minutes!**
+### 🚀 Ready to start? Run `./setup.sh` and have your first invoice generated in under 5 minutes!
 
 ## 📚 **DOCUMENTATION & GUIDES**
 
