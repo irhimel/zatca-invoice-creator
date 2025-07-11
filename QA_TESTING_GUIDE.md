@@ -176,7 +176,7 @@
 - [ ] Retry mechanisms
 - [ ] User-friendly error messages
 
-### Edge Cases
+### Error Recovery
 
 - [ ] Database corruption recovery
 - [ ] Large file uploads

@@ -65,17 +65,17 @@
 
 ### Intel Macs
 
-8. Download `ZATCA Invoice Creator-1.0.0-x64.dmg`
-9. Double-click to open the disk image
-10. Drag the app to Applications folder
-11. Launch from Applications
+1. Download `ZATCA Invoice Creator-1.0.0-x64.dmg`
+2. Double-click to open the disk image
+3. Drag the app to Applications folder
+4. Launch from Applications
 
 ### Apple Silicon Macs (M1/M2)
 
-12. Download `ZATCA Invoice Creator-1.0.0-arm64.dmg`
-13. Double-click to open the disk image
-14. Drag the app to Applications folder
-15. Launch from Applications
+1. Download `ZATCA Invoice Creator-1.0.0-arm64.dmg`
+2. Double-click to open the disk image
+3. Drag the app to Applications folder
+4. Launch from Applications
 
 #### Security Note
 

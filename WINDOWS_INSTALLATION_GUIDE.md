@@ -31,9 +31,9 @@ Your ZATCA Invoice Creator application has been successfully built as a Windows 
 
 #### Step 3: First Launch
 
-5. **Desktop shortcut** will be created automatically
-6. Or find it in **Start Menu** → **"ZATCA Invoice Creator"**
-7. The application will start immediately
+1. **Desktop shortcut** will be created automatically
+2. Or find it in **Start Menu** → **"ZATCA Invoice Creator"**
+3. The application will start immediately
 
 ### SYSTEM REQUIREMENTS
 
