@@ -37,13 +37,13 @@
 
 ### 🚀 **Distribution**
 
-- **Build Files**: Excluded from Git (too large for GitHub)
-- **GitHub Repository**: Source code and documentation only
-- **Local Builds**: Available in `release/` directory
-- **Distribution Method**: Manual file sharing or release hosting
+- **Build Files**: ✅ **NOW INCLUDED** in GitHub repository using Git LFS
+- **GitHub Repository**: Source code, documentation, AND build files
+- **Download Method**: Clone repository or download releases directly from GitHub
+- **Git LFS**: Large files efficiently stored and versioned (452 MB uploaded)
 
 ---
 **Build Date**: July 12, 2025  
-**Status**: ✅ PRODUCTION READY  
+**Status**: ✅ PRODUCTION READY + GITHUB DISTRIBUTED  
 **Platforms**: Windows + macOS  
-**Size Limit**: Files excluded from Git due to GitHub 100MB limit
+**LFS Integration**: ✅ Complete - All build files accessible via GitHub
