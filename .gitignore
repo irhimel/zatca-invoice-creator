@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+release/*.dmg
+release/*.zip
+release/**/*.app
+release/**/*.asar
+
