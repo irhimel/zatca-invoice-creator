@@ -12,7 +12,17 @@ https://github.com/irhimel/zatca-invoice-creator
 
 ## 🚀 **Download Options**
 
-### Option 1: Clone with Git LFS
+### 🌟 **Recommended: GitHub Releases** (Easiest)
+
+**Visit our official release page for direct downloads:**
+👉 **[Download v1.0.0 Release](https://github.com/irhimel/zatca-invoice-creator/releases/tag/v1.0.0)** 👈
+
+- ✅ **One-click downloads** for all platforms
+- ✅ **No Git LFS setup required**
+- ✅ **Automatic update notifications**
+- ✅ **Version-specific documentation**
+
+### Option 2: Clone with Git LFS
 
 ```bash
 git clone https://github.com/irhimel/zatca-invoice-creator.git
@@ -20,16 +30,11 @@ cd zatca-invoice-creator
 git lfs pull  # Downloads large build files
 ```
 
-### Option 2: Download ZIP
+### Option 3: Download ZIP
 
 - Visit the GitHub repository
 - Click "Code" → "Download ZIP"
 - Extract and find builds in `release/` directory
-
-### Option 3: Direct Release Downloads
-
-- Go to repository "Releases" section
-- Download platform-specific installers directly
 
 ## 📋 **Available Downloads**
 
