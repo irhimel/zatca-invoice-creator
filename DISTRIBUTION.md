@@ -1,78 +1,47 @@
-# 📦 ZATCA Invoice Creator - Distribution Guide
+# 📦 Download ZATCA Invoice Creator
 
-## ✅ **GitHub Repository Access**
+## � **Quick Download**
 
-Your build files are now fully accessible through GitHub using Git LFS!
+👉 **[Download Latest Release](https://github.com/irhimel/zatca-invoice-creator/releases/latest)** 👈
 
-### 🔗 **Repository URL**
+## 📋 **Choose Your Platform**
 
-```
-https://github.com/irhimel/zatca-invoice-creator
-```
+## 📋 **Choose Your Platform**
 
-## 🚀 **Download Options**
+### 🪟 **Windows**
 
-### 🌟 **Recommended: GitHub Releases** (Easiest)
+- **Installer**: `ZATCA Invoice Creator-Setup.exe` - Recommended
+- **Portable**: `ZATCA Invoice Creator.exe` - No installation needed
 
-**Visit our official release page for direct downloads:**
-👉 **[Download v1.0.0 Release](https://github.com/irhimel/zatca-invoice-creator/releases/tag/v1.0.0)** 👈
+### 🍎 **macOS**
 
-- ✅ **One-click downloads** for all platforms
-- ✅ **No Git LFS setup required**
-- ✅ **Automatic update notifications**
-- ✅ **Version-specific documentation**
+- **Intel Macs**: Download x64 DMG
+- **Apple Silicon (M1/M2/M3)**: Download arm64 DMG
 
-### Option 2: Clone with Git LFS
+### 🐧 **Linux**
 
-```bash
-git clone https://github.com/irhimel/zatca-invoice-creator.git
-cd zatca-invoice-creator
-git lfs pull  # Downloads large build files
-```
+- **AppImage**: Universal Linux package
 
-### Option 3: Download ZIP
+## � **Installation**
 
-- Visit the GitHub repository
-- Click "Code" → "Download ZIP"
-- Extract and find builds in `release/` directory
+### Windows
 
-## 📋 **Available Downloads**
+1. Download and run the installer
+2. Follow the setup wizard
+3. Launch from Start Menu
 
-### Windows Users
+### macOS
 
-- **Installer**: `ZATCA Invoice Creator-1.0.0-Setup.exe` (89 MB) ✅
-- **Portable**: `ZATCA Invoice Creator.exe` (194 MB) ✅
+1. Download and open the DMG
+2. Drag app to Applications
+3. **First launch**: Right-click → "Open"
 
-### macOS Users  
+### Linux
 
-- **Intel Macs**: `ZATCA Invoice Creator-1.0.0-x64.dmg` (118 MB) ✅
-- **Apple Silicon**: `ZATCA Invoice Creator-1.0.0-arm64.dmg` (113 MB) ✅
-- **Intel ZIP**: `ZATCA Invoice Creator-1.0.0-x64.zip` (114 MB) ✅
-- **Apple Silicon ZIP**: `ZATCA Invoice Creator-1.0.0-arm64.zip` (109 MB) ✅
-
-### Linux Users
-
-- **AppImage**: `ZATCA Invoice Creator-1.0.0.AppImage` (120 MB) ✅
-
-## 🔧 **Git LFS Details**
-
-- **Total Size**: ~1.4 GB (all platforms)
-- **Files Tracked**: 200+ LFS objects
-- **Supported Types**: `*.exe`, `*.dmg`, `*.zip`, `*.AppImage`
-- **Bandwidth**: Efficient transfer at ~3.2 MB/s
-
-## ✅ **Verification**
-
-All build files are now:
-
-- ✅ Version controlled
-- ✅ Accessible via GitHub
-- ✅ Efficiently stored with Git LFS
-- ✅ Ready for distribution
-- ✅ **Complete cross-platform support** (Windows, macOS, Linux)
+1. Download AppImage
+2. `chmod +x *.AppImage`
+3. `./ZATCA-Invoice-Creator.AppImage`
 
 ---
-**Last Updated**: July 12, 2025  
-**LFS Status**: ✅ Active and Configured  
-**Repository Status**: ✅ **COMPLETE - All Platforms Built**  
-**Distribution**: ✅ Windows + macOS + Linux Ready
+
+**Repository**: [zatca-invoice-creator](https://github.com/irhimel/zatca-invoice-creator)
