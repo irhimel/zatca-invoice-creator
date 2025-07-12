@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="540" height="380" viewBox="0 0 540 380" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="540" height="380" fill="url(#bgGradient)"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="540" height="80" fill="#1e40af" opacity="0.1"/>
+  
+  <!-- Title -->
+  <text x="270" y="45" text-anchor="middle" fill="#1e40af" font-family="Arial, sans-serif" font-size="24" font-weight="bold">
+    ZATCA Invoice Creator
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="270" y="65" text-anchor="middle" fill="#64748b" font-family="Arial, sans-serif" font-size="14">
+    Drag the app to Applications folder to install
+  </text>
+  
+  <!-- App icon placeholder circle -->
+  <circle cx="130" cy="220" r="50" fill="#3b82f6" opacity="0.2" stroke="#1e40af" stroke-width="2"/>
+  <text x="130" y="230" text-anchor="middle" fill="#1e40af" font-family="Arial, sans-serif" font-size="32" font-weight="bold">📊</text>
+  
+  <!-- Applications folder icon -->
+  <rect x="385" y="195" width="50" height="50" fill="#6b7280" opacity="0.3" rx="8"/>
+  <text x="410" y="230" text-anchor="middle" fill="#374151" font-family="Arial, sans-serif" font-size="32">📁</text>
+  
+  <!-- Arrow -->
+  <path d="M 180 220 Q 270 200 360 220" stroke="#3b82f6" stroke-width="3" fill="none" stroke-dasharray="5,5" opacity="0.6"/>
+  <polygon points="355,215 365,220 355,225" fill="#3b82f6" opacity="0.6"/>
+  
+  <!-- Footer -->
+  <text x="270" y="340" text-anchor="middle" fill="#64748b" font-family="Arial, sans-serif" font-size="12">
+    ZATCA Phase 2 Compliant • Business Ready • Offline Capable
+  </text>
+</svg>

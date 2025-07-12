@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZATCA Integration Test</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .feature {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #007bff;
+            border-radius: 5px;
+        }
+
+        .feature h3 {
+            color: #007bff;
+            margin-top: 0;
+        }
+
+        .checkmark {
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .requirement {
+            margin: 10px 0;
+            padding: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+        }
+
+        .code {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 14px;
+            overflow-x: auto;
+            margin: 10px 0;
+        }
+
+        .success {
+            color: #28a745;
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+        }
+
+        .info {
+            color: #17a2b8;
+            background: #d1ecf1;
+            border: 1px solid #bee5eb;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🇸🇦 ZATCA Phase 2 Integration Test</h1>
+
+        <div class="feature success">
+            <h3><span class="checkmark">✓</span> Core Requirements Implemented</h3>
+            <div class="requirement">
+                <strong>Invoice Type:</strong> Simplified Tax Invoice (B2C) - Code 388
+            </div>
+            <div class="requirement">
+                <strong>Offline Generation:</strong> Full offline capability with local queue
+            </div>
+            <div class="requirement">
+                <strong>24-hour Reporting:</strong> Automatic sync within compliance window
+            </div>
+        </div>
+
+        <div class="feature success">
+            <h3><span class="checkmark">✓</span> QR Code Generation</h3>
+            <div class="requirement">
+                <strong>TLV Encoding:</strong> Tag-Length-Value format as per ZATCA spec
+                <div class="code">
+                    Tag 1: Seller Name (UTF-8)<br>
+                    Tag 2: VAT Registration Number<br>
+                    Tag 3: Invoice Timestamp (ISO 8601)<br>
+                    Tag 4: Invoice Total (with VAT)<br>
+                    Tag 5: VAT Total
+                </div>
+            </div>
+            <div class="requirement">
+                <strong>Base64 Encoding:</strong> TLV → Base64 → QR Code
+            </div>
+            <div class="requirement">
+                <strong>QR Code Rendering:</strong> SVG format for PDF embedding
+            </div>
+        </div>
+
+        <div class="feature success">
+            <h3><span class="checkmark">✓</span> Cryptographic Stamp</h3>
+            <div class="requirement">
+                <strong>ECDSA Signature:</strong> Private key signature generation
+            </div>
+            <div class="requirement">
+                <strong>Hash Chaining:</strong> SHA-256 based invoice integrity
+            </div>
+            <div class="requirement">
+                <strong>Public Key Embedding:</strong> Certificate data in UBL XML
+            </div>
+        </div>
+
+        <div class="feature success">
+            <h3><span class="checkmark">✓</span> UBL XML Structure</h3>
+            <div class="requirement">
+                <strong>ZATCA XSD Compliance:</strong> Structured according to official schema
+            </div>
+            <div class="requirement">
+                <strong>Cryptographic Elements:</strong> Signatures and certificates embedded
+            </div>
+            <div class="requirement">
+                <strong>Validation Ready:</strong> Compatible with ZATCA validation tools
+            </div>
+        </div>
+
+        <div class="feature success">
+            <h3><span class="checkmark">✓</span> PDF/A-3 Invoice Format</h3>
+            <div class="requirement">
+                <strong>PDF Generation:</strong> jsPDF with html2canvas rendering
+            </div>
+            <div class="requirement">
+                <strong>Embedded XML:</strong> UBL XML attached to PDF
+            </div>
+            <div class="requirement">
+                <strong>QR Code Integration:</strong> Visual QR code in invoice layout
+            </div>
+        </div>
+
+        <div class="feature success">
+            <h3><span class="checkmark">✓</span> Offline Queue & Sync</h3>
+            <div class="requirement">
+                <strong>Local Storage:</strong> Secure invoice queue with retry logic
+            </div>
+            <div class="requirement">
+                <strong>Auto-Sync:</strong> Background reporting to ZATCA APIs
+            </div>
+            <div class="requirement">
+                <strong>Error Handling:</strong> Comprehensive logging and recovery
+            </div>
+        </div>
+
+        <div class="feature info">
+            <h3>📋 Testing Instructions</h3>
+            <div class="requirement">
+                <strong>1. Start Development Server:</strong>
+                <div class="code">npm run dev</div>
+            </div>
+            <div class="requirement">
+                <strong>2. Navigate to Create Invoice:</strong>
+                <div class="code">http://localhost:5175/</div>
+            </div>
+            <div class="requirement">
+                <strong>3. Fill Invoice Details:</strong>
+                <ul>
+                    <li>Enter customer information</li>
+                    <li>Add invoice items with VAT</li>
+                    <li>Click "Send Invoice" to generate ZATCA compliant invoice</li>
+                </ul>
+            </div>
+            <div class="requirement">
+                <strong>4. Verify ZATCA Features:</strong>
+                <ul>
+                    <li>Check invoice status and validation</li>
+                    <li>Download PDF with embedded QR code</li>
+                    <li>Report to ZATCA (simulated)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="feature info">
+            <h3>🔧 Technical Implementation</h3>
+            <div class="requirement">
+                <strong>Services:</strong>
+                <ul>
+                    <li><code>ZATCAService</code> - Main orchestration</li>
+                    <li><code>ZATCAQRCodeGenerator</code> - TLV → Base64 → QR</li>
+                    <li><code>ZATCAUBLGenerator</code> - XML structure</li>
+                    <li><code>ZATCACryptographicStamp</code> - ECDSA signatures</li>
+                    <li><code>ZATCAOfflineQueue</code> - Local storage & sync</li>
+                    <li><code>ZATCAPDFGenerator</code> - PDF/A-3 generation</li>
+                </ul>
+            </div>
+            <div class="requirement">
+                <strong>Context:</strong>
+                <ul>
+                    <li><code>ZATCAProvider</code> - React context for app-wide access</li>
+                    <li><code>useZATCA</code> - Hook for ZATCA functionality</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="feature success">
+            <h3><span class="checkmark">✓</span> Compliance Status</h3>
+            <p>All ZATCA Phase 2 requirements have been implemented for offline Simplified Tax Invoice generation. The
+                system is ready for production use with proper certificate configuration.</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/* Custom utility classes */
+.text-accent {
+  color: #60a5fa;
+}
+
+.text-muted-foreground {
+  color: #6b7280;
+}
