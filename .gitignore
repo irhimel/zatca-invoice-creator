@@ -23,21 +23,12 @@ dist-ssr
 *.sln
 *.sw?
 
-# Build outputs and distribution files
-release/
-dist-electron/
+# Node modules and temporary files only
+# Note: Build files are now tracked with Git LFS
 
-# macOS builds
-*.dmg
-*.zip
-
-# Windows builds
-*.exe
-*.blockmap
-
-# Build artifacts
-*.asar
-win-unpacked/
-mac/
-linux-unpacked/
+# Include build outputs (tracked by Git LFS)
+# release/ - now included
+# *.exe - now included  
+# *.dmg - now included
+# *.zip - now included
 
